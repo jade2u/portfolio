@@ -1,0 +1,17 @@
+/* ---- ARCHIVE ---- */
+.archive>.content{
+    background-color: purple;
+    margin-top: 4em;
+}
+.archive nav{
+    background-color:red;
+    height: fit-content;
+    width: fit-content;
+}
+.archive button{
+    background-color: purple;
+    color: white;
+    text-align: right;
+    display: inline-block;
+    padding: 0.5em;
+}

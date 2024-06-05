@@ -2,12 +2,223 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Jade Tu</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>jade's archive</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="select.css"/>
+        <link rel="stylesheet" type="text/css" href="archive.css"/>
     </head>
 
     <body>
-        <h1><a href="ribbon/index.html">ribbon</a></h1>
-        <h1><a href="map/index.html">map</a></h1>
+        
+            <section id="intro">
+                <h1>Hi!</h1>
+            </section>
+            <!-- TABS -->
+            <nav id="btns">
+                <button class="select" onclick="switchTab(this)">selected</button>
+                <button class="archive" onclick="switchTab(this)">archive</button>
+            </nav>
+            
+            <section id="tab">
+                
+                <!-- SELECT -->
+                <div class="select">
+                    <button id="rha-more" class="more">see more like this!</button>
+                    <div class="content">
+                        <!-- rha -->
+                        <div id="rha">
+                            <section id="rha-start">
+                                <img src="./select/rush hour/title.gif" width="105%" style="transform:translateX(-12px);">
+                                <a href="https://derin-ogut.itch.io/rush-hour-anxiety" target="_blank"> 
+                                    <div id="rha-link"></div>
+                                </a>
+                            </section>
+                            <hr>
+
+                            <h2>Menu Items</h2>
+                            <h3>Credits</h3>
+                            <section id="creds">
+                                <section class="hero">
+                                    <img src="./select/rush hour/creds/creds.png" width="90%">
+                                    <p>pop-up window</p>
+                                </section>
+                                <section class="img-1">
+                                    <img src="./select/rush hour/creds/creds_btn.png" width="60%">
+                                    <p>icon</p>
+                                </section>
+                                <section class="img-2">
+                                    <img src="./select/rush hour/creds/creds_hover.png" width="60%">
+                                    <p>icon hover-state</p>
+                               </section>
+                            </section>
+                            <h3>Tutorial</h3>
+                            <section id="tutorial">
+                                <section class="hero">
+                                    <img src="./select/rush hour/tut/tut.png" width="90%">
+                                    <p>pop-up window</p>
+                                </section>
+                                <section class="img-1">
+                                    <img src="./select/rush hour/tut/tut_btn.png" width="50%">
+                                    <p>icon</p>
+                                </section>
+                                <section class="img-2">
+                                    <img src="./select/rush hour/tut/tut_hover.png" width="50%">
+                                    <p>icon hover-state</p>
+                               </section>
+                            </section>
+                            <hr>
+
+                            <h2>On-Screen UI</h2>
+                            <h3>Direction</h3>
+                            <section id="direction">
+                                <p>
+                                    <strong>Problem</strong>
+                                    Players played the whole game just on the default screen.
+                                </p>
+                                <p>
+                                    <strong>Solution</strong>
+                                    Have a sprite that instructs and reacts to players looking around.
+                                </p>
+                                <section class="hero">
+                                    <img src="./select/rush hour/lookUI/down.png">
+                                    <img src="./select/rush hour/lookUI/up.png">
+                                    <img src="./select/rush hour/lookUI/left.png">
+                                    <img src="./select/rush hour/lookUI/right.png">
+                                </section>
+                                <section class="img-1">
+                                    <img src="./select/rush hour/demo/up.png" width="100%"> 
+                                </section>
+                            </section>
+                            <h3>Combat</h3>
+                            <section id="combat">
+                                <p>
+                                    <strong>Problem</strong>
+                                    Players didn't understand the function of turning the phone off.
+                                </p>
+                                <p>
+                                    <strong>Solution</strong>
+                                    Show what moves combat NPCs.
+                                </p>
+                                <section class="hero">
+                                    <img src="./select/rush hour/lookUI/off.png">
+                                    <img src="./select/rush hour/lookUI/hit.png">
+                                </section>
+                                <section class="img-1"> 
+                                    <img src="./select/rush hour/demo/hit.jpeg" width="100%">
+                                </section>
+                            </section>
+
+                            <h2>Promotional Posters</h2>
+                            <section id="poster">
+                                <img src="./select/rush hour/poster-01.png" width="70%">
+                                <br>
+                                <img src="./select/rush hour/poster-02.png" width="90%">
+                            </section>
+                            
+                            <hr>
+                        </div>
+                        <!-- ribbon -->
+                        <div id="ribbon">
+                            <section id="ribbon-start">
+                                <img src="./select/ribbon/assets/logo.svg" width="30%" style="transform:translateX(0.75em);">
+                                <img src="./select/ribbon/assets/ribbon.svg" width="100%" style="transform:translateY(-3em);">
+                                <p>*currently only in developer mode 😕</p>
+                                <a href="./select/ribbon/index.html" target="_blank">Wrap</a>
+                            </section>
+                            <hr>
+
+                            <h2>Goal</h2>
+                            <p>Make Spotify Wrapped a little more personal with custom graphics according to genre & cover art.</p>
+
+                            <h3>API</h3>
+                            <section id="api">
+                                <p>
+                                    Using the Spotify API, I organized results into 3 categories and 3 time periods.
+                                    <br> 
+                                    This served as a basis for the design.</p>
+                                <img src="./select/ribbon/demo/title card.png">
+                            </section>
+
+                            <h3>Design</h3>
+                            <section id="design">
+                                    <img class="img-1" src="./select/ribbon/demo/artist.png">
+                                    <img class="img-2" src="./select/ribbon/demo/genre.png">
+                                    <p>
+                                        For Artist and Genre cards, I designated 2 colors for each genre.
+                                        I created algorithms to choose complementing/contrasting colors based on the 2 colors.
+                                    </p>
+
+                                    <img class="img-3" src="./select/ribbon/demo/tracks.png">
+                                    <p id="tracks" class="img-3">
+                                        For Track cards, I used a color picker algorithm instead.
+                                    </p>
+                            </section>        
+                        </div>
+                        <!-- hyejin -->
+                        <div id="hyejin">hyejin</div>
+                        <!-- map -->
+                        <div id="map">map</div>
+                        <!-- pompom -->
+                        <div id="pompom">pompom</div>
+                    </div>
+                </div>
+
+                <!-- ARCHIVE -->
+                <div class="archive">
+                    <nav>
+                        <button>sites</button>
+                        <button>designs</button>
+                        <button>misc</button>
+                    </nav>
+
+                    <div class="content">
+                        <section id="archive-site">
+                            <div id="site-1">music AI</div>
+                            <div id="site-2">bloodchild</div>
+                            <div id="site-3">bandplayer</div>
+                        </section>
+
+                        <section id="archive-design">
+                            <div id="design-1">hook'd</div>
+                            <div id="design-2">social media</div>
+                            <div id="design-3">posters</div>
+                        </section>
+
+                        <section id="archive-misc">
+                            <div id="misc-1">sound waves</div>
+                            <div id="misc-2">loop pool</div>
+                            <div id="misc-3">comics</div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+        <script>
+            //start on select tab
+            let archive_stuff = document.getElementsByClassName('archive');
+            archive_stuff[0].style.opacity = "50%";
+            archive_stuff[1].style.display = "none";
+
+            function switchTab(btn){
+                //get other tab button
+                let last_btn;
+                let btns = document.getElementById('btns').children;
+                for(var i=0; i<btns.length; i++){
+                    if(btns[i].className != btn.className){last_btn = btns[i];}
+                }
+                //get other tab
+                let last_tab = document.getElementsByClassName(last_btn.className);
+                //change visibility
+                last_tab[0].style.opacity = "50%";
+                last_tab[1].style.display = "none";
+
+                //get current tab
+                let this_tab = document.getElementsByClassName(btn.className);
+                //change visibility
+                this_tab[0].style.opacity = "100%";
+                this_tab[1].style.display = "block"; 
+            }
+        </script>
+        
     </body>
 </html>
