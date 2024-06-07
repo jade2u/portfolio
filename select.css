@@ -300,7 +300,8 @@
     margin: auto;
 }
 #hyejin table img{
-    height: 8em;
+    height: 30vw;
+    max-height: 10em;
     border-radius: 10px;
     margin: 0.5em;
     margin-bottom: 0;
@@ -338,6 +339,7 @@
 }
 #hyejin .liner-notes img{
     width: 80%;
+    max-width: 18em;
     height: auto;
     border-radius: 10px;
 }
