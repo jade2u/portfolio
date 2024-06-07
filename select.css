@@ -1,10 +1,7 @@
-/* ---- RHA ---- */
+/* ------------------- RHA ------------------- */
 #rha{
     background-color: #dfdd9f;
     font-family: Helvetica, Arial, sans-serif;
-}
-#rha section, #ribbon section{
-    padding-bottom: 0.5em;  
 }
 #rha-more{
     background-color: blue;
@@ -39,16 +36,22 @@
     text-align: center;
     height: fit-content;
 }
+#rha .tag{
+    color: #ffc600;
+    height: fit-content;
+    width: fit-content;
+}
 
 /* start */
 #rha-start{
-    padding-top: 1em;
-    background: linear-gradient(#ffc600 75%, #dfdd9f 100%) #ffc600;
+    background: linear-gradient(#ffc600 75%, #0000 100%);
 }
 #rha-link{
     height: 12vh;
-    margin-top: 15vh;
-    margin-bottom: 25vh; 
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
     background-image: url("./select/rush hour/start_btn.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -107,21 +110,17 @@
     margin-right: 0.5em;
 }
 /* scroll */
-#rha::-webkit-scrollbar{
-    background: rgba(0, 0, 0, 0.1);
-}
 #rha::-webkit-scrollbar-thumb{
     background: #d62d1a;
-    border-radius: 10px;
 }
 
 
-/* ---- RIBBON ---- */
+/* ------------------- RIBBON ------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 #ribbon{
     background-color: #57DB85;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 #ribbon h2{
     background-color: #15843C;
@@ -151,16 +150,22 @@
     margin-top: 0;
     margin-left: 1em;
 }
+#ribbon .tag{
+    color: #15843C;
+    height: fit-content;
+    width: fit-content;
+    float: left;
+}
 
 /* sections */
 #ribbon-start{
-    background: linear-gradient(#15843C 75%, #57DB85 100%);
-    font-family: Helvetica, Arial, sans-serif;
+    background: linear-gradient(#15843C 75%, #0000 100%);
 }
 #ribbon-start img{
     height: fit-content;
     display: block;
     margin: auto;
+    margin-bottom: 0.5em;
     padding: 0;
 }
 #ribbon-start p{
@@ -168,8 +173,7 @@
     font-style: italic;
     color: #57DB85;
     text-align: center;
-    margin-top: 3em;
-    transform: translateY(-6em);
+    margin-top: 1em;
 }
 #ribbon-start a{
     background-color: white;
@@ -184,12 +188,12 @@
     
     display: block;
     margin: auto;
-    margin-top: 1.5em;
+    margin-top: 0em;
+    margin-bottom: 3em;
     padding: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
 
-    transform: translateY(-5em);
     transition-property: padding;
     transition-duration: 0.2s;
 }
@@ -234,10 +238,201 @@
 }
 
 /* scroll */
-#ribbon::-webkit-scrollbar{
-    background: rgba(0, 0, 0, 0.1);
-}
 #ribbon::-webkit-scrollbar-thumb{
     background: #ffffb5;
+}
+
+
+
+/* ------------------- HYEJIN ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap');
+@font-face {
+    font-family: ALS Script;
+    src: url(./select/hyejin/alsscrp.ttf);
+  }
+
+#hyejin{
+    background-color: #698fd2;
+    font-family: "IM Fell French Canon", Georgia, 'Times New Roman', Times, serif;
+}
+#hyejin .tag{
+    color: #2b60b6;
+    width: fit-content;
+}
+#hyejin img{
+    margin-top: 0;
+    display: block;
+    margin: auto;
+}
+#hyejin h2{
+    font-family: ALS Script, cursive;
+    background-color: #5a4fac;
+    color: #a5c6ff;
+    font-size: 2em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    width: fit-content;
+    padding: 0.2em;
+    padding-right: 0.5em;
+    padding-left: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    filter: blur(0.5px);
+}
+#hyejin h3{
+    color: #5a4fac;
+    background: linear-gradient(to right, #a5c6ff, #0000);
+    font-size: 1em;
+    padding-left: 2em;
+    filter:blur(0.5px);
+}
+#hyejin p{
+    color: #1a2373;
+    font-size: 0.6em;
+    padding-left: 2em;
+    padding-top: 0;
+}
+
+/* table */
+#hyejin table{
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+#hyejin table img{
+    height: 8em;
     border-radius: 10px;
+    margin: 0.5em;
+    margin-bottom: 0;
+    filter: drop-shadow(0 0 0.5rem #a5c6ff);
+}
+
+/* sections */
+#hyejin-start{
+    background: linear-gradient(#1a2373 30%,#073d94 60%, #0000 100%);
+}
+#hyejin-start a{
+    font-family: ALS Script, cursive;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #1b1464;
+    font-size: 1.2em;
+    border-radius: 3em;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    filter: blur(1px);
+    
+    display: block;
+    margin: auto;
+    margin-top: 0.75em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+
+    transition-property: background-color, color, filter;
+    transition-duration: 0.2s;
+}
+#hyejin-start a:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #fb439f;
+    filter: blur(0px);
+}
+#hyejin .liner-notes img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* scroll */
+#hyejin::-webkit-scrollbar-thumb{
+    background: #fb439f;
+}
+
+
+/* ------------------- POMPOM ------------------- */
+#pompom{
+    background-color: rgb(43, 28, 76);
+    font-family: Gill Sans, sans-serif;
+    font-weight: 300;
+}
+#pompom iframe, #pompom img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+#pompom .tag{
+    background-color: rgba(197, 144, 255);
+    color: black;
+    width: fit-content;
+    display: inline-block;
+}
+#pompom p{
+    color: #ffd1fe;
+    font-size: 0.5em;
+}
+#pompom h2{
+    color: #ffd1d7;
+    text-shadow: #ff2020 0 0 12px;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+#pompom h3{
+    color: #d1efff;
+    text-shadow: #1980ff 0 0 10px;
+    font-size: .8em;
+    font-weight: 300;
+    margin-top: 0;
+}
+/* start */
+#pom-start{
+    background: linear-gradient(black 75%, #0000 100%);
+}
+#pom-link{
+    height: 50vh;
+    opacity: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
+    background-image: url("./select/wip/storytelling_final/png/intro/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pom-link:hover{
+    opacity: 100%;
+}
+/* grid */
+#pompom .hero{
+    padding-left: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 0.5em;
+
+    grid-template-areas:
+        "title title"
+        "p vid";
+}
+#pompom .hero h2 {grid-area: title;}
+#pompom .hero p {grid-area: p;}
+#pompom .hero iframe {grid-area: vid;}
+
+#pompom .img-1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 0em;
+    margin: 1em;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    grid-template-areas:
+        "h3 pic";
+}
+#pompom .production h3 {grid-area: h3;}
+#pompom .production iframe, #pompom .production img{grid-area: pic;}
+
+/* scroll */
+#pompom::-webkit-scrollbar-thumb{
+    background: #ffd60a;
 }
