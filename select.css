@@ -370,7 +370,8 @@
 }
 #pompom p{
     color: #ffd1fe;
-    font-size: 0.5em;
+    font-size: 0.6em;
+    line-height: 2.5ch;
 }
 #pompom h2{
     color: #ffd1d7;
@@ -390,7 +391,7 @@
 #pom-start{
     background: linear-gradient(black 75%, #0000 100%);
 }
-#pompom a{
+#pom-start a{
     height: 50vh;
     max-height: 300px;
     opacity: 50%;
@@ -449,8 +450,7 @@
 #map .tag{
     color: #caecfc;
     width: fit-content;
-    float: left;
-    z-index: 100;
+    display: inline-block;
 }
 #map h2{
     color: #4aaad7;
@@ -464,7 +464,7 @@
     margin-left: 0;
     margin-right: 2em;
     margin-bottom: 0.5em;
-    transform: translateX(-5px);
+   margin-top: 3em;
 }
 #map p, #map li{
     font-size: 0.6em;
@@ -474,14 +474,13 @@
 /* start */
 #map #map-start{
     background: linear-gradient(#caecfc 70%, #fdfbe6 100%);
-    transform: translateY(-4em);
     padding: 0;
 }
 #map-start img{
     width: 100%;
     display: block;
     margin: auto;
-    transform: translateY(2em);
+    transform: translateY(-1.2em);
 }
 #map .img-1{
     display: grid;
