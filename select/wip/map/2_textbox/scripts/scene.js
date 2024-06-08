@@ -203,21 +203,21 @@ function redrawText(thisObject) {
     //find language
     let new_lang = LANG.matchLanguage(thisObject.mesh.getWorldPosition(mesh_static.position))
     //translate
-    LANG.translate(thisObject.text, new_lang)
-    .then(translatedText => {
+    //LANG.translate(thisObject.text, new_lang)
+    //.then(translatedText => {
         //draw text
         let canvas = thisObject.canvas;
         let context = canvas.getContext("2d");
         thisObject.texture.needsUpdate = true;
 
-        console.log(translatedText);
+        //console.log(translatedText);
         context.clearRect(0, 0, canvas.width, canvas.height);
         let fontSize = Math.max(camera.fov / 10, 15);
         context.font = fontSize + "pt Arial";
         context.textAlign = "center";
         context.fillStyle = "red";
-        context.fillText(translatedText, canvas.width / 2, canvas.height / 2);
-    })
+        context.fillText(thisObject.text, canvas.width / 2, canvas.height / 2);
+    //})
     /*
     .catch(error => {
         console.error(error);

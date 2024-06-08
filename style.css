@@ -39,8 +39,7 @@ button{
 /* tab (select/archive) */
 #tab>div{
     margin-top: 3em;
-    height: 100vh;
-    max-height: 28em;
+    height: 65vh;
     width: 100vw;
     
     overflow: hidden;
