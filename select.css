@@ -50,8 +50,8 @@
     height: 12vh;
     display: flex;
     justify-self: center;
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
     background-image: url("./select/rush hour/start_btn.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -149,6 +149,7 @@
     font-size: 0.7em;
     margin-top: 0;
     margin-left: 1em;
+    margin-right: 1em;
 }
 #ribbon .tag{
     color: #15843C;
@@ -208,8 +209,6 @@
 }
 #api p, #design p{
     font-size: 0.6em;
-    margin-right: 1em;
-    text-align: center;
     color: #11632e;
 }
 #design img{
@@ -260,9 +259,10 @@
     width: fit-content;
 }
 #hyejin img{
-    margin-top: 0;
     display: block;
     margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 #hyejin h2{
     font-family: ALS Script, cursive;
@@ -325,8 +325,8 @@
     
     display: block;
     margin: auto;
-    margin-top: 0.75em;
-    margin-bottom: 2em;
+    margin-top: 3vh;
+    margin-bottom: 20vh;
     padding: 0.5em;
 
     transition-property: background-color, color, filter;
@@ -397,16 +397,16 @@
     opacity: 50%;
     display: flex;
     justify-self: center;
-    margin-bottom: 2em;
+    margin-bottom: 15vh;
     background-image: url("./select/wip/storytelling_final/png/intro/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-#pompom a:hover{
+#pom-start a:hover{
     opacity: 100%;
 }
-/* grid */
+/* grid 
 #pompom .hero{
     padding-left: 0.5em;
     display: grid;
@@ -416,18 +416,32 @@
 
     grid-template-areas:
         "title title"
-        "p vid";
+        "vid vid";
 }
+
 #pompom .hero h2 {grid-area: title;}
 #pompom .hero p {grid-area: p;}
-#pompom .hero iframe {grid-area: vid;}
 
+*/
+#pompom .hero{
+    margin: 1em;
+    display: block;
+    height: max-content;
+}
+#pompom .hero iframe {
+    height: 50vh;
+    width: 70vh;
+    display: flex;
+    justify-self: center;  
+}
+#pompom .hero a{
+    text-decoration: solid underline #ffd1fe 1px;
+}
 #pompom .img-1{
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 0em;
     margin: 1em;
-    margin-right: 0;
     margin-bottom: 0;
 
     grid-template-areas:
@@ -447,11 +461,7 @@
     background-color: #fdfbe6;
     font-family: 'Andale Mono', monospace;
 }
-#map .tag{
-    color: #caecfc;
-    width: fit-content;
-    display: inline-block;
-}
+
 #map h2{
     color: #4aaad7;
     font-size: 1em;
@@ -472,15 +482,27 @@
 }
 
 /* start */
-#map #map-start{
+#map-start{
     background: linear-gradient(#caecfc 70%, #fdfbe6 100%);
     padding: 0;
+    display: grid;
+    grid-template-areas:
+        "img";
+}
+#map .tag{
+    grid-area: img;
+    color: #caecfc;
+    width: fit-content;
+    z-index: 5;
 }
 #map-start img{
-    width: 100%;
-    display: block;
-    margin: auto;
-    transform: translateY(-1.2em);
+    grid-area: img;
+    display: flex;
+    justify-self: center;
+}
+#map-start #map-logo{
+    margin-top: 25vh;
+    margin-bottom: 15vh;
 }
 #map .img-1{
     display: grid;

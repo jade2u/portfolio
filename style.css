@@ -38,8 +38,8 @@ button{
 }
 /* tab (select/archive) */
 #tab>div{
-    margin-top: 3em;
-    height: 65vh;
+    margin-top: 2%;
+    height: 70vh;
     width: 100vw;
     
     overflow: hidden;
@@ -59,7 +59,6 @@ div.content{
     scroll-snap-type: x mandatory;
     scroll-padding: 0;
 }
-/* hide hor scrollbar for now*/
 .content::-webkit-scrollbar{
     height: 1em;
     background: #ffffff88;
@@ -67,23 +66,10 @@ div.content{
 .content::-webkit-scrollbar-thumb{
     width: 1em;
     height: 1em;
-    background: #f394a4;
+    background: #ec697f;
 }
 
 /* slide (project) */
-.tag{
-    font-family: Poppins, 'Gill Sans', sans-serif;
-    background-color: rgba(0,0,0,0.5);
-    font-weight: 400;
-    font-size: 0.5em;
-    border-radius: 1em;
-    height: fit-content;
-    width: fit-content;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0.5em;
-    padding: 0.5em;
-}
 div.content section{
     padding-bottom: 0.5em;
 }
@@ -100,6 +86,7 @@ div.content div{
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
 div.content h1{
     width: 100%;
     height: fit-content;
@@ -110,6 +97,19 @@ div.content div::-webkit-scrollbar{
 }
 div.content div::-webkit-scrollbar-thumb{
     border-radius: 10px;
+}
+.tag{
+    font-family: Poppins, 'Gill Sans', sans-serif;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: 400;
+    font-size: 0.5em;
+    border-radius: 1em;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    padding: 0.5em;
 }
 #buffer{
     width: 10%;
