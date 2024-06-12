@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>jade's archive</title>
-        <link rel="shortcut icon" type="image/ico" href="./favicon.ico">
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico">
 
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" type="text/css" href="select.css"/>
@@ -11,14 +11,16 @@
     </head>
 
     <body>
-            <section id="intro">
-                <h1>Hi! I'm Jade 😎</h1>
-                <p>
-                    I'm currently reworking my website (jade2u.com). So, here is my less cool but equally comprehensive Github page. Thanks for visiting!
-                    <br>
-                    📬: <em>jadewtu@gmail.com</em>
-                </p>
-            </section>
+            <div class="dropdown">
+                <button id="dropbtn"><h1>Hi! I'm Jade ⇝</h1></button>
+                <div id="dropdown-content">
+                    <p>
+                        I'm currently reworking my website (jade2u.com).<br>So, here is my less cool but equally comprehensive Github page.<br> Thanks for visiting!
+                        <br>
+                        📬: <em>jadewtu@gmail.com</em>
+                    </p>
+                </div>
+            </div>
 
             <!-- TABS -->
             <nav id="btns">
@@ -242,8 +244,9 @@
 
                                 <p>I want to reimagine the story of Persephone into the context of a nightclub where Persephone is a club-goer trying to escape the creepy guy following her, Hades.</p>
                                 <p>With this setting, I hope to highlight how the myth is often romanticized for its ‘happy ending’, and how retellings often gloss over Persephone's capture.</p>
-
+                                    <!--
                                 <iframe  src="https://www.youtube.com/embed/YrP6yz5Dfm8?si=Wo_mscDvrqs5BnUn&amp;start=25"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                -->
                             </section>
 
                             <section class="img-1">
@@ -252,7 +255,9 @@
                             </section>
                             <section class="img-1">
                                 <h3>MOODBOARD</h3>
+                                <!--
                                 <iframe style="border:none;" src="https://petracoding.github.io/pinterest/board.html?link=jwt5310/pompom/&hideHeader=0&transparent=0"></iframe>
+                                -->
                             </section>
                             <section class="img-1">
                                 <h3>ASSETS</h3>
@@ -323,7 +328,7 @@
                         <div class="sites">
                             <h1 class="tag">Sites</h1>
 
-                            <section id="musicAI" style="margin-top:5vh;">
+                            <section id="musicAI" style="margin-top:4vh;">
                                 <a href="./archive/site/music AI/index.html" target="_blank">Music AI</a>
                                 <section class="carousel">
                                     <img src="./archive/site/music AI/mockup-1.jpeg">
@@ -356,7 +361,7 @@
                         <div class="designs">
                             <h1 class="tag">Designs</h1>
 
-                            <section id="hookd" style="margin-top:5vh;">
+                            <section id="hookd" style="margin-top:4vh;">
                                 <h2>Hook'd</h2>
                                 <section class="carousel">
                                     <img src="./archive/design/hookd/mockup-01.png">
@@ -398,7 +403,7 @@
                         <div class="others">
                             <h1 class="tag">& Others</h1>
 
-                            <section id="waves" style="margin-top:5vh;">
+                            <section id="waves" style="margin-top:4vh;">
                                 <h2>Sound Waves</h2>
                                 <section class="carousel">
                                     <img src="./archive/misc/sound waves/left.jpeg">
@@ -427,6 +432,21 @@
             </section>
             
         <script>
+            /* INTRO DROP DOWN*/
+            let drop_btn = document.getElementById("dropbtn");
+            let drop_text = document.getElementById("dropdown-content");
+            //show
+            dropbtn.addEventListener("mouseenter", (event) => {
+                dropbtn.style.color = "#ffa0b0";
+                drop_text.style.display = "block";
+            })
+            //hide
+            dropbtn.addEventListener("mouseleave", (event) => {
+                dropbtn.style.color = "black";
+                drop_text.style.display = "none";
+            })
+
+            /* SWITCH TABS */
             //start on select tab
             let archive_stuff = document.getElementsByClassName('archive');
             archive_stuff[0].style.opacity = "50%";

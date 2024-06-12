@@ -29,14 +29,19 @@
 }
 
 .archive .tag{
-    background-color: #ec697f;
+    background-color: #ec697fbf;
     color: white;
-    width: 31vw;
-    border-radius: 0;
+    font-size: 0.6em;
+    width: 32vw;
+    max-width: 20em;
+    
+    
+    border-radius: 5px;
     display: flex;
     align-self: center;
     justify-content: center;
     position: fixed;
+    padding: 0;
     margin-top: 0;
 }
 .archive a, .archive h2{
@@ -63,9 +68,9 @@
 }
 .archive img, .archive iframe{
     width: 32vw;
+    max-width: 12em;
     display: block;
     margin: auto;
     scroll-snap-align: center;
 }
-/* ---- SITES ---- */
 
