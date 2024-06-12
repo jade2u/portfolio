@@ -1,17 +1,71 @@
-/* ---- ARCHIVE ---- */
-.archive>.content{
-    background-color: purple;
-    margin-top: 4em;
+/* category */
+/* project */
+.archive section{
+    background-color: white;
+    margin: 0;
+    margin-bottom: 0.2em;
+    padding: 0;
 }
-.archive nav{
-    background-color:red;
+/* img carousel */
+.archive .carousel{
     height: fit-content;
-    width: fit-content;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    margin: 0;
+    
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0;
 }
-.archive button{
-    background-color: purple;
+.archive .carousel::-webkit-scrollbar{
+    height: 0.2em;
+    background-color: lightgray;
+    border-radius: 0;
+}
+.archive .carousel::-webkit-scrollbar-thumb{
+    border-radius: 0;
+    background-color: #1e1e1e;
+}
+
+.archive .tag{
+    background-color: #ec697f;
     color: white;
-    text-align: right;
-    display: inline-block;
-    padding: 0.5em;
+    width: 31vw;
+    border-radius: 0;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    position: fixed;
+    margin-top: 0;
 }
+.archive a, .archive h2{
+    font-size: 1em;
+    height: fit-content;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    padding: 0.5em;
+    margin: 0;
+}
+.archive h2{
+    padding-top:0;
+    padding-bottom:0;
+}
+.archive a{
+    text-decoration: underline;
+}
+.archive p{
+    font-size: 0.5em;
+    padding: 0.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.archive img, .archive iframe{
+    width: 32vw;
+    display: block;
+    margin: auto;
+    scroll-snap-align: center;
+}
+/* ---- SITES ---- */
+

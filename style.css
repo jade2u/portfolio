@@ -48,17 +48,6 @@ button{
 
 
 /* --- CONTENT --- */
-/* container */
-div.content{
-    height: 100%;
-    width: 100%;
-    gap: 1em;
-    display: flex;
-    
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 0;
-}
 .content::-webkit-scrollbar{
     height: 1em;
     background: #ffffff88;
@@ -67,36 +56,6 @@ div.content{
     width: 1em;
     height: 1em;
     background: #ec697f;
-}
-
-/* slide (project) */
-div.content section{
-    padding-bottom: 0.5em;
-}
-div.content div{
-    border-radius: 10px;
-    font-size: 2em;
-    width: 80vw;
-    max-width: 25em;
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: column;
-    
-    scroll-snap-align: center;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-div.content h1{
-    width: 100%;
-    height: fit-content;
-}
-div.content div::-webkit-scrollbar{
-    width: 0.5em;
-    border-radius: 10px;;
-}
-div.content div::-webkit-scrollbar-thumb{
-    border-radius: 10px;
 }
 .tag{
     font-family: Poppins, 'Gill Sans', sans-serif;
@@ -113,10 +72,78 @@ div.content div::-webkit-scrollbar-thumb{
 }
 #buffer{
     width: 10%;
+    background: none;
 }
 #buffer::-webkit-scrollbar{
     background:none;
 }
+
+/* SELECT */
+.select .content{
+    height: 100%;
+    width: 100%;
+    gap: 1em;
+    display: flex;
+    
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0;
+}
+/* slide (project) */
+.select .content section{
+    padding-bottom: 0.5em;
+}
+.select .content div{
+    border-radius: 10px;
+    font-size: 2em;
+    width: 80vw;
+    max-width: 25em;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    
+    scroll-snap-align: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.select .content div::-webkit-scrollbar{
+    width: 0.5em;
+    border-radius: 10px;;
+}
+.select .content div::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+}
+
+/* ARCHIVE */
+.archive .content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+/* category */
+.archive .content div{
+    border-radius: 10px;
+    font-size: 2em;
+    width: 32vw;
+    max-width: 25em;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.archive .content div::-webkit-scrollbar{
+    width: 0.3em;
+    border-radius: 10px;
+}
+.archive .content div::-webkit-scrollbar-thumb{
+    background-color: #ec697f;
+    border-radius: 10px;
+}
+
+
 
 
 
