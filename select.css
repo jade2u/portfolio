@@ -172,7 +172,7 @@
 img#ribbon-logo{
     width: 25%;
     max-width: 150px;
-    transform:translate(-1.5em, -0.5em);
+    transform:translate(-1em, -0.5em);
     z-index: -5;
 }
 img#ribbon-title{
