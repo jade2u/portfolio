@@ -1,0 +1,55 @@
+/* PHONE */
+@media screen and (max-width: 600px){
+    .dropdown{
+        width: 100%;
+        display: inline-block;
+        z-index: 1;
+    }
+    #dropbtn{
+        font-size: 1em;
+        width: 100%;
+    }
+    #dropdown-content {
+        background: #fff4f6;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        font-size: 0.8em;
+        width: fit-content;
+        padding: 1em;
+        transform: translateY(-4vh);
+    }
+    #tab>div{
+        margin-top: 5%;
+    }
+
+    /* ---  SELECT --- */
+    #buffer{
+        width: 5%;
+    }
+    .select .content{
+        gap: 0.5em;
+    }
+    .select .content div{
+        width: 85vw;
+    }
+
+    /*RHA*/
+    #rha a{
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+        height: 9vh;
+    }
+
+    /*RIBBON*/
+    img#ribbon-logo{
+        width: 125px;
+        transform:translate(-0.5em, -1em);
+        z-index: -5;
+    }
+    img#ribbon-title{
+        height: 12%;
+        
+    }
+    
+    
+}

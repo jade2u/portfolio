@@ -163,11 +163,20 @@
     background: linear-gradient(#15843C 75%, #0000 100%);
 }
 #ribbon-start img{
-    height: fit-content;
+    width: fit-content;
     display: block;
     margin: auto;
     margin-bottom: 0.5em;
     padding: 0;
+}
+img#ribbon-logo{
+    width: 25%;
+    max-width: 150px;
+    transform:translate(-1.5em, -0.5em);
+    z-index: -5;
+}
+img#ribbon-title{
+    transform:translateY(-1em);
 }
 #ribbon-start p{
     font-size: 0.5em;
