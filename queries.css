@@ -20,7 +20,11 @@
         transform: translateY(-4vh);
     }
     #tab>div{
-        margin-top: 5%;
+        margin-top: 2%;
+    }
+    button{
+        font-size: 1.2em;
+        margin-left: 10%;
     }
 
     /* ---  SELECT --- */
