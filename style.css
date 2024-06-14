@@ -72,7 +72,7 @@ button{
 }
 
 
-/* --- CONTENT --- */
+/* --- SLIDES --- */
 .content::-webkit-scrollbar{
     height: 1em;
     background: #ffffff88;
@@ -103,8 +103,8 @@ button{
     background:none;
 }
 
-/* SELECT */
-.select .content{
+/* slide */
+.content{
     height: 100%;
     width: 100%;
     gap: 1em;
@@ -114,60 +114,36 @@ button{
     scroll-snap-type: x mandatory;
     scroll-padding: 0;
 }
-/* slide (project) */
-.select .content section{
-    padding-bottom: 0.5em;
-}
-.select .content div{
+
+/* content */
+.content div{
     border-radius: 10px;
     font-size: 2em;
     width: 80vw;
     max-width: 25em;
+    margin-bottom: 2vh;
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
-    
     
     scroll-snap-align: center;
     overflow-x: hidden;
     overflow-y: scroll;
 }
-.select .content div::-webkit-scrollbar{
+.content div::-webkit-scrollbar{
     width: 0.5em;
     border-radius: 10px;;
 }
-.select .content div::-webkit-scrollbar-thumb{
+.content div::-webkit-scrollbar-thumb{
     border-radius: 10px;
 }
 
-/* ARCHIVE */
-.archive .content{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content:space-evenly;
+/* each project/section */
+.content section{
+    margin-bottom: 0.5em;
 }
-/* category */
-.archive .content div{
-    border-radius: 10px;
-    font-size: 2em;
-    width: 32vw;
-    max-width: 12em;
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: column;
 
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-.archive .content div::-webkit-scrollbar{
-    width: 0.3em;
-    border-radius: 10px;
-}
-.archive .content div::-webkit-scrollbar-thumb{
-    background-color: #ec697f;
-    border-radius: 10px;
-}
+
 
 
 

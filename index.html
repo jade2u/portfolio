@@ -329,18 +329,20 @@
                 
                 <div class="archive">
                     <div class="content">
+                        <div id="buffer"></div>
+
                         <div class="sites">
                             <h1 class="tag">Sites</h1>
 
-                            <section id="musicAI" style="margin-top:4vh;">
+                            <section id="musicAI" >
                                 <a href="./archive/site/music AI/index.html" target="_blank">Music AI</a>
                                 <section class="carousel">
                                     <img src="./archive/site/music AI/mockup-1.jpeg">
                                     <img src="./archive/site/music AI/mockup-2.jpeg">
                                 </section>
-                                <p>Text and photo Generative AI practice with ReplicateAI.<br>Made with Javascript and stored in Firebase.</p>
+                                <p>Text and photo Generative AI practice with ReplicateAI.<br><br>Made with Javascript and stored in Firebase.</p>
                             </section>
-
+                            
                             <section id="bloodchild">
                                 <a href="https://jadewtu.itch.io/bloodchild" target="_blank">Bloodchild</a>
                                 <section class="carousel">
@@ -365,7 +367,7 @@
                         <div class="designs">
                             <h1 class="tag">Designs</h1>
 
-                            <section id="hookd" style="margin-top:4vh;">
+                            <section id="hookd">
                                 <h2>Hook'd</h2>
                                 <section class="carousel">
                                     <img src="./archive/design/hookd/mockup-01.png">
@@ -418,7 +420,7 @@
                         <div class="others">
                             <h1 class="tag">& Others</h1>
 
-                            <section id="waves" style="margin-top:4vh;">
+                            <section id="waves">
                                 <h2>Sound Waves</h2>
                                 <section class="carousel">
                                     <img src="./archive/misc/sound waves/left.jpeg">
@@ -440,6 +442,8 @@
                             </section>
                             
                         </div>
+
+                        <div id="buffer"></div>
                     </div>
                 </div>
                 
@@ -463,7 +467,7 @@
 
             /* SWITCH TABS */
             //start on select tab
-            let archive_stuff = document.getElementsByClassName('archive');
+            let archive_stuff = document.getElementsByClassName('select');
             archive_stuff[0].style.opacity = "50%";
             archive_stuff[1].style.display = "none";
 
