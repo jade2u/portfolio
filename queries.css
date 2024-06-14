@@ -2,8 +2,9 @@
 @media screen and (max-width: 600px){
     .dropdown{
         width: 100%;
+        height: min-content;
         display: inline-block;
-        z-index: 1;
+        z-index: 5;
     }
     #dropbtn{
         font-size: 1em;
@@ -32,24 +33,76 @@
     .select .content div{
         width: 85vw;
     }
-
-    /*RHA*/
+    /*rha*/
     #rha a{
         margin-top: 20vh;
         margin-bottom: 20vh;
         height: 9vh;
     }
-
-    /*RIBBON*/
+    /*ribbon*/
     img#ribbon-logo{
         width: 125px;
         transform:translate(-0.5em, -1em);
         z-index: -5;
     }
-    img#ribbon-title{
-        height: 12%;
-        
+    #ribbon-title img{
+        transform:translateY(-15vw);
+        margin: 0;
     }
-    
-    
+    #ribbon-start p, #ribbon-start a{
+        transform:translateY(-8vw);
+    }
+    /*hyejin*/
+    #hyejin h2{
+        font-size: 1.3em;
+    }
+    #hyejin p{
+        font-size: 0.5em;
+        padding-left: 1em;
+    }
+    #hyejin table img{
+        margin: 0;
+    }
+    #hyejin .stickers img{
+        height: 45vw;
+    }
+    #hyejin .hoodie img{
+        height: 50vw;
+    }
+    #hyejin #hoodie-pic img, #hyejin .keychain img{
+        height: 35vw;
+    }
+    /*pom pom*/
+    #pompom h3{
+        font-size: 1em;
+    }
+    #pompom .img-1{
+        display: block;
+    }
+    /*map*/
+    #map-start img#map-logo{
+        margin-top: 30vh;
+        margin-bottom: 15vh;
+    }
+    #map h2{
+        font-size: 1em;
+    }
+    #map h3{
+        font-size: 0.7em;
+    }
+    #map p, #map li{
+        font-size: 0.5em;
+    }
+
+    /* ---  ARCHIVE --- */
+    .archive .content div, .archive .tag{
+        width: 80vw;
+    }
+    .archive section{
+        display: block;
+        margin-bottom: 4px;
+    }
+    .archive p{
+        margin-top: 0.5em;
+    } 
 }

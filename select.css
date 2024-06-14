@@ -89,7 +89,7 @@
     display: inline-block;
     width: 20%;
 }
-#direction p, #combat p{
+#direction p, #combat p, p#rha-about{
     text-align: left;
     width: 70%;
     font-style: normal;
@@ -99,7 +99,7 @@
     margin: auto;
     margin-bottom: 1em;
 }
-#direction strong, #combat strong{
+#rha strong{
     color: white;
     background-color: rgba(0,0,0,0.5);
     font-weight: 500;
@@ -502,16 +502,18 @@ img#ribbon-title{
     grid-area: img;
     color: #caecfc;
     width: fit-content;
-    z-index: 5;
+    z-index: 2;
 }
 #map-start img{
     grid-area: img;
     display: flex;
     justify-self: center;
 }
-#map-start #map-logo{
+#map-start img#map-logo{
     margin-top: 25vh;
     margin-bottom: 15vh;
+    height: 10vh;
+    max-height: 250px; 
 }
 #map .img-1{
     display: grid;
