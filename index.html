@@ -16,7 +16,7 @@
 
     <body>
             <div class="dropdown">
-                <button id="dropbtn"><h1>Hi! I'm Jade ⇝</h1></button>
+                <button id="dropbtn" onclick="dropDown()"><h1>Hi! I'm Jade ⇝</h1></button>
                 <div id="dropdown-content">
                     <p>
                         I'm currently reworking my website... <br>So here is my less cool but equally comprehensive Github page.<br> Thanks for visiting! 
@@ -475,16 +475,22 @@
             /* INTRO DROP DOWN*/
             let drop_btn = document.getElementById("dropbtn");
             let drop_text = document.getElementById("dropdown-content");
-            //show
-            dropbtn.addEventListener("mouseenter", (event) => {
+            let drop_show = false;
+
+            function dropDown(){
+                drop_show = !drop_show;
+                console.log(drop_show);
+                
+                if(drop_show){
                 dropbtn.style.color = "#ffa0b0";
                 drop_text.style.display = "block";
-            })
-            //hide
-            dropbtn.addEventListener("mouseleave", (event) => {
-                dropbtn.style.color = "black";
-                drop_text.style.display = "none";
-            })
+                }
+                else if(!drop_show){
+                    dropbtn.style.color = "black";
+                    drop_text.style.display = "none";
+                }
+            }
+            
 
             /* SWITCH TABS */
             //start on select tab

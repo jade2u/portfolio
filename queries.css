@@ -1,7 +1,20 @@
 @media only screen and (max-width: 400px){
-    #tab{
-        height: 60vh;
+    body{
+        height: fit-content;
     }
+    #tab>div{
+        height: 68vh;
+    }
+    #ribbon p{
+        font-size: 0.5em;
+    }
+    #ribbon h2, #ribbon h3{
+        font-size: 0.7em;
+    }
+    #hyejin h3{
+        font-variant: small-caps;
+    }
+
 }
 /* TABLET */
 @media only screen and (max-width: 600px){
