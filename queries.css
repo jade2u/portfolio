@@ -1,4 +1,9 @@
-/* PHONE */
+@media only screen and (max-width: 400px){
+    #tab{
+        height: 60vh;
+    }
+}
+/* TABLET */
 @media only screen and (max-width: 600px){
     .dropdown{
         width: 100%;
