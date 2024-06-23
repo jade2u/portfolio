@@ -261,18 +261,20 @@
                         <!-- pompom -->
                         <div id="pompom">
                             <section id="pom-start">
-                                <h1 class="tag">In Progress</h1>
-                                <a href="./select/wip/storytelling_final/start.html" target="_blank"> 
+                                <h1 class="tag">Prototype</h1>
+                                <a href="https://sticky-cantaloupe-e14.notion.site/Storytelling-Final-d3e6961438be4407a69ec7c985fb4a99?pvs=4" target="_blank"> 
                                     <div id="pom-link"></div>
                                 </a>
                             </section>
                             
                             <section class="hero">
                                 <h2>GOAL</h2>
-                                <a href="https://sticky-cantaloupe-e14.notion.site/final-d3e6961438be4407a69ec7c985fb4a99?pvs=4" target="_blank"><p><em>Read more about the project & my process here!</em><p></a>
 
                                 <p>I want to reimagine the story of Persephone into the context of a nightclub where Persephone is a club-goer trying to escape the creepy guy following her, Hades.</p>
-                                <p>With this setting, I hope to highlight how the myth is often romanticized for its ‘happy ending’, and how retellings often gloss over Persephone's capture.</p>
+
+                                <p> With the club setting, I hope to highlight how the myth is often romanticized for its ‘happy ending’, and how retellings often gloss over Persephone's capture.</p>
+                                
+                                <p>With the medium of a game, I also wanted the player to experience the stress as Persephone.</p>
                             </section>
 
                             <section class="img-1">
@@ -291,8 +293,8 @@
                             </section>
 
                             <section class="progress" style="margin-left: 0.5em;">
-                                <h2>PROGRESS</h2>
-                                <p> I'm currently updating the assets and improving the game feel! Along with debugging...</p>
+                                <h2>FUTURE</h2>
+                                <p>If I were to continue on this project, I would work on improving the movement of the character and maybe playing with acceleration and velocity. There is also a l</p>
                             </section>
                             
                         </div>
@@ -472,25 +474,25 @@
             </section>
             
         <script>
-            /* INTRO DROP DOWN*/
+            /*DROP DOWN*/
             let drop_btn = document.getElementById("dropbtn");
             let drop_text = document.getElementById("dropdown-content");
             let drop_show = false;
 
             function dropDown(){
+                //toggle
                 drop_show = !drop_show;
-                console.log(drop_show);
-                
+                //show
                 if(drop_show){
                 dropbtn.style.color = "#ffa0b0";
                 drop_text.style.display = "block";
                 }
+                //hide
                 else if(!drop_show){
                     dropbtn.style.color = "black";
                     drop_text.style.display = "none";
                 }
             }
-            
 
             /* SWITCH TABS */
             //start on select tab
@@ -499,13 +501,13 @@
             archive_stuff[1].style.display = "none";
 
             function switchTab(btn){
-                //get other tab button
+                //find other tab
                 let last_btn;
                 let btns = document.getElementById('btns').children;
                 for(var i=0; i<btns.length; i++){
                     if(btns[i].className != btn.className){last_btn = btns[i];}
                 }
-                //get other tab
+                //get other tab 
                 let last_tab = document.getElementsByClassName(last_btn.className);
                 //change visibility
                 last_tab[0].style.opacity = "50%";
