@@ -35,6 +35,9 @@ button{
     margin: 0;
     cursor: pointer; 
 }
+#dropbtn:hover{
+    font-style: italic;
+}
 .dropdown {
     position: fixed;
     display: flex;

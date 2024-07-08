@@ -1,3 +1,4 @@
+/* ------ MOBILE ------ */
 @media only screen and (max-width: 400px){
     body{
         height: fit-content;
@@ -16,7 +17,8 @@
     }
 
 }
-/* TABLET */
+
+/* ------ TABLET ------ */
 @media only screen and (max-width: 600px){
     .dropdown{
         width: 100%;
@@ -45,7 +47,7 @@
         margin-left: 10%;
     }
 
-    /* ---  SELECT --- */
+    /* SELECT */
     #buffer{
         width: 5%;
     }
@@ -116,7 +118,7 @@
         font-size: 0.5em;
     }
 
-    /* ---  ARCHIVE --- */
+    /*  ARCHIVE */
     .archive .content div, .archive .tag{
         width: 80vw;
     }
@@ -127,4 +129,98 @@
     .archive p{
         margin-top: 0.5em;
     } 
+}
+
+
+/* ----- LARGE MONITOR ----- */
+@media only screen and (min-height: 1000px){
+    /* HEADER */
+    #dropbtn{
+        font-size: 1.5em;
+        left: 0;
+    }
+    #dropdown-content{
+        font-size: 1em;
+    }
+    button{
+        font-size: 1em;
+    }
+
+    /*  SELECT */
+    .tag{
+        font-size: 0.75em;
+    }
+    /*rha*/
+    #rha p{
+        font-size: 0.75em;
+    }
+    #rha-start a{
+        margin: 1em;
+        margin-top: 25%;
+        margin-bottom: 50%;
+    }
+    /*ribbon*/
+    img#ribbon-logo{
+        transform:translate(-0.75em, 0);
+        z-index: -5;
+    }
+    #ribbon-title img{
+        width: 150%;
+        transform:translate(-5.5em, 1em);
+    }
+    #ribbon p{
+        font-size: 0.75em;
+    }
+    #ribbon em a{
+        color: #c5ffb5;
+        text-decoration-color: #c5ffb5;
+    }
+    #ribbon-start p{
+        margin-top: 15%;
+    }
+    #ribbon-start a{
+        font-size: 1em;
+        margin-bottom: 25%;
+    }
+    /*hyejin*/
+    #hyejin-start img{
+        margin-top: 15%;
+    }
+    #hyejin-start a{
+        margin-top: 10%;
+        font-size: 1.5em;
+    }
+    #hyejin p{
+        font-size: 0.75em;
+    }
+    /*pom pom*/
+    #pom-start a{
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }
+    #pompom p, #pompom ul{
+        font-size: 0.75em;
+    }
+    /*map*/
+    #map-start img#map-logo{
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+    }
+    #map p, #map li{
+        margin: 1em;
+        font-size: 0.75em;
+    }
+    
+
+    /* ARCHIVE */
+    .archive p{
+        font-size: 0.6em;
+    }
+    .archive .content{
+        gap: 3%;
+    }
+    .archive #buffer{
+        width: 5%;
+    }
+
 }

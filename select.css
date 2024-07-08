@@ -150,6 +150,7 @@
     margin-top: 0;
     margin-left: 1em;
     margin-right: 1em;
+    color: #11632e;
 }
 #ribbon .tag{
     color: #15843C;
@@ -171,7 +172,7 @@
 }
 img#ribbon-logo{
     width: 25%;
-    max-width: 150px;
+    max-width: 200px;
     transform:translate(-1em, -0.5em);
     z-index: -5;
 }
@@ -215,10 +216,6 @@ img#ribbon-title{
 }
 #api img{
     width: 100%;
-}
-#api p, #design p{
-    font-size: 0.6em;
-    color: #11632e;
 }
 #design img{
     width: 80%;
@@ -377,10 +374,14 @@ img#ribbon-title{
     width: fit-content;
     display: inline-block;
 }
-#pompom p{
+#pompom p, #pompom ul{
     color: #ffd1fe;
     font-size: 0.6em;
     line-height: 2.5ch;
+    margin: 1em;
+}
+#pompom li{
+    margin-bottom: 1em;
 }
 #pompom h2{
     color: #ffd1d7;
@@ -399,39 +400,34 @@ img#ribbon-title{
 /* start */
 #pom-start{
     background: linear-gradient(black 75%, #0000 100%);
+    margin-bottom: 15vh;
+}
+#pom-start p{
+    color: #ffd1d7;
+    text-shadow: #ff2020 0 0 12px;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-0.5em);
+    margin-top: 50%;
 }
 #pom-start a{
+    text-decoration: none;
     height: 50vh;
-    max-height: 300px;
+    max-height: 400px;
     opacity: 50%;
     display: flex;
     justify-self: center;
-    margin-bottom: 15vh;
     background-image: url("./select/wip/storytelling_final/png/intro/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 0;
 }
 #pom-start a:hover{
     opacity: 100%;
 }
-/* grid 
-#pompom .hero{
-    padding-left: 0.5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 0.5em;
 
-    grid-template-areas:
-        "title title"
-        "vid vid";
-}
-
-#pompom .hero h2 {grid-area: title;}
-#pompom .hero p {grid-area: p;}
-
-*/
+/* img */
 #pompom .hero{
     margin: 1em;
     display: block;

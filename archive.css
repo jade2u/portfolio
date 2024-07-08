@@ -1,7 +1,7 @@
 /* project */
 .archive .content div{
     width: 70vw;
-    max-width: 20em;
+    max-width: 22em;
 }
 .archive section{
     background-color: white;
@@ -10,7 +10,7 @@
     padding-bottom: 1em;
 
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas:
         "title title"
         "carousel text";
@@ -48,7 +48,7 @@
     color: white;
     font-size: 0.6em;
     width: 70vw;
-    max-width: 34em;
+    max-width: 36em;
     border-radius: 5px;
     
     display: flex;
@@ -61,6 +61,7 @@
 .archive a, .archive h2{
     font-size: 1em;
     height: fit-content;
+    width: fit-content;
     text-decoration: none;
     font-weight: 500;
     color: black;
@@ -69,7 +70,10 @@
     margin: 0;
 }
 .archive a{
-    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+.archive a:hover, .archive a:focus{
+    font-style: italic;
 }
 .archive p{
     font-size: 0.5em;
