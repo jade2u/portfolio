@@ -19,7 +19,7 @@
 }
 
 /* ------ TABLET ------ */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     .dropdown{
         width: 100%;
         height: min-content;
@@ -156,17 +156,18 @@
     }
     #rha-start a{
         margin: 1em;
-        margin-top: 25%;
-        margin-bottom: 50%;
+        margin-top: 20vh;
+        margin-bottom: 25vh;
     }
     /*ribbon*/
     img#ribbon-logo{
-        transform:translate(-0.75em, 0);
+        transform:translate(-1em, 0em);
         z-index: -5;
     }
     #ribbon-title img{
-        width: 150%;
-        transform:translate(-5.5em, 1em);
+        width: 100%;
+        transform:translateY(1em);
+        margin-top: 6vh;
     }
     #ribbon p{
         font-size: 0.75em;
@@ -176,18 +177,18 @@
         text-decoration-color: #c5ffb5;
     }
     #ribbon-start p{
-        margin-top: 15%;
+        margin-top: 10vh;
     }
     #ribbon-start a{
         font-size: 1em;
-        margin-bottom: 25%;
+        margin-bottom: 17vh;
     }
     /*hyejin*/
     #hyejin-start img{
-        margin-top: 15%;
+        margin-top: 15vh;
     }
     #hyejin-start a{
-        margin-top: 10%;
+        margin-top: 5vh;
         font-size: 1.5em;
     }
     #hyejin p{

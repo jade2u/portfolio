@@ -116,8 +116,6 @@
 
 
 /* ------------------- RIBBON ------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 #ribbon{
     background-color: #57DB85;
     font-family: "Montserrat", sans-serif;
@@ -250,7 +248,6 @@ img#ribbon-title{
 
 
 /* ------------------- HYEJIN ------------------- */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap');
 @font-face {
     font-family: ALS Script;
     src: url(./select/hyejin/alsscrp.ttf);
@@ -288,7 +285,8 @@ img#ribbon-title{
 #hyejin h3{
     color: #5a4fac;
     background: linear-gradient(to right, #a5c6ff, #0000);
-    font-size: 1em;
+    font-size: 1.2em;
+    font-variant: small-caps;
     padding-left: 2em;
     filter:blur(0.5px);
 }
@@ -408,7 +406,7 @@ img#ribbon-title{
     width: 100%;
     text-align: center;
     transform: translateX(-0.5em);
-    margin-top: 50%;
+    margin-top: 35vh;
 }
 #pom-start a{
     text-decoration: none;
