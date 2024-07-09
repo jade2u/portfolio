@@ -7,7 +7,7 @@
         height: 68vh;
     }
     #ribbon p{
-        font-size: 0.5em;
+        font-size: 0.4em;
     }
     #ribbon h2, #ribbon h3{
         font-size: 0.7em;
@@ -20,6 +20,9 @@
 
 /* ------ TABLET ------ */
 @media only screen and (max-width: 700px){
+    span.down{
+        font-size: 1.5em;
+    }
     .dropdown{
         width: 100%;
         height: min-content;
@@ -58,10 +61,9 @@
         width: 85vw;
     }
     /*rha*/
-    #rha a{
-        margin-top: 20vh;
-        margin-bottom: 20vh;
-        height: 9vh;
+    #rha-start a{
+        margin-top: 12vh;
+        margin-bottom: 16vh;
     }
     /*ribbon*/
     img#ribbon-logo{
@@ -70,11 +72,14 @@
         z-index: -5;
     }
     #ribbon-title img{
-        transform:translateY(-15vw);
+        transform:translateY(-16vw);
         margin: 0;
     }
-    #ribbon-start p, #ribbon-start a{
-        transform:translateY(-8vw);
+    #ribbon-start p{
+        margin-top: -4vh;
+    }
+    #ribbon-start a{
+        margin-bottom: 6vh;
     }
     /*hyejin*/
     #hyejin h2{
@@ -83,6 +88,10 @@
     #hyejin p{
         font-size: 0.5em;
         padding-left: 1em;
+    }
+    #hyejin-start a{
+        margin-top: 7vh;
+        margin-bottom: 8vh;
     }
     #hyejin table img{
         margin: 0;
@@ -97,6 +106,13 @@
         height: 35vw;
     }
     /*pom pom*/
+    #pom-start a{
+        margin-bottom: 10vh;
+        height: 30vh;
+    }
+    #pom-start p{
+        margin-top: 30vh;
+    }
     #pompom h3{
         font-size: 1em;
     }
@@ -105,8 +121,8 @@
     }
     /*map*/
     #map-start img#map-logo{
-        margin-top: 30vh;
-        margin-bottom: 15vh;
+        margin-top: 25vh;
+        margin-bottom: 18vh;
     }
     #map h2{
         font-size: 1em;
@@ -132,7 +148,7 @@
 }
 
 
-/* ----- LARGE MONITOR ----- */
+/* ----- WIDESCREEN ----- */
 @media only screen and (min-height: 1000px){
     /* HEADER */
     #dropbtn{
@@ -154,10 +170,9 @@
     #rha p{
         font-size: 0.75em;
     }
-    #rha-start a{
-        margin: 1em;
-        margin-top: 20vh;
-        margin-bottom: 25vh;
+    #rha a{
+        margin-top: 16vh;
+        margin-bottom: 16vh;
     }
     /*ribbon*/
     img#ribbon-logo{
@@ -165,39 +180,35 @@
         z-index: -5;
     }
     #ribbon-title img{
-        width: 100%;
-        transform:translateY(1em);
         margin-top: 6vh;
     }
     #ribbon p{
+
         font-size: 0.75em;
     }
-    #ribbon em a{
-        color: #c5ffb5;
-        text-decoration-color: #c5ffb5;
-    }
     #ribbon-start p{
-        margin-top: 10vh;
+        margin-top: 4vh;
     }
     #ribbon-start a{
         font-size: 1em;
-        margin-bottom: 17vh;
+        margin-top: 0;
+        margin-bottom: 9vh;
     }
     /*hyejin*/
     #hyejin-start img{
-        margin-top: 15vh;
+        margin-top: 9vh;
     }
     #hyejin-start a{
-        margin-top: 5vh;
         font-size: 1.5em;
+        margin-bottom: 12vh;
     }
     #hyejin p{
         font-size: 0.75em;
     }
     /*pom pom*/
     #pom-start a{
-        margin-top: 2em;
-        margin-bottom: 5em;
+        margin-top: 5vh;
+        margin-bottom: 20vh;
     }
     #pompom p, #pompom ul{
         font-size: 0.75em;
@@ -205,7 +216,7 @@
     /*map*/
     #map-start img#map-logo{
         margin-top: 30vh;
-        margin-bottom: 30vh;
+        margin-bottom: 20vh;
     }
     #map p, #map li{
         margin: 1em;

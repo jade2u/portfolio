@@ -151,6 +151,15 @@ button{
 .content section{
     margin-bottom: 0.5em;
 }
+span.down {
+    font-size: 2em;
+    opacity: 40%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10vh;
+}
 
 
 
