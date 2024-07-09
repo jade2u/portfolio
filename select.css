@@ -54,8 +54,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 #rha a:hover{
     background-image: url("./select/rush hour/start_hover.png");
@@ -178,14 +178,14 @@ img#ribbon-logo{
     transform: translate(-0.5em, -2em);
 }
 #ribbon-title img{
-    transform: translateY(-3em);
+    margin-top: -3em;
 }
 #ribbon-start p{
     font-size: 0.5em;
     font-style: italic;
     color: #57DB85;
     text-align: center;
-    margin-top: -2em;
+    margin-top: 3em;
 }
 #ribbon-start a{
     background-color: white;
@@ -201,7 +201,7 @@ img#ribbon-logo{
     display: block;
     margin: auto;
     margin-top: 0;
-    margin-bottom: 5em;
+    margin-bottom: 3.5em;
     padding: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
@@ -334,7 +334,7 @@ img#ribbon-logo{
     display: block;
     margin: auto;
     margin-top: 1em;
-    margin-bottom: 4em;
+    margin-bottom: 2.2em;
     padding: 0.5em;
 
     transition-property: background-color, color, filter;
@@ -425,7 +425,7 @@ img#ribbon-logo{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
 }
 #pom-start a:hover{
     opacity: 100%;
@@ -510,10 +510,12 @@ img#ribbon-logo{
     justify-self: center;
 }
 #map-start img#map-logo{
-    margin-top: 25vh;
-    margin-bottom: 15vh;
+    margin-top: 30vh;
     height: 10vh;
     max-height: 250px; 
+}
+#map span.down{
+    transform: translateY(-0.7em);
 }
 #map .img-1{
     display: grid;

@@ -152,6 +152,7 @@ button{
     margin-bottom: 0.5em;
 }
 span.down {
+    font-family: Poppins;
     font-size: 2em;
     opacity: 40%;
     display: block;
