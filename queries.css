@@ -6,8 +6,14 @@
     #tab>div{
         height: 68vh;
     }
+    #rha p{
+        font-size: 0.45em;
+    }
+    #rha-about{
+        padding-right: 5.5em;
+    }
     #ribbon p{
-        font-size: 0.4em;
+        font-size: 0.5em;
     }
     #ribbon h2, #ribbon h3{
         font-size: 0.7em;
