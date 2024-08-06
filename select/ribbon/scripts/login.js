@@ -18,7 +18,7 @@ const authEndpoint = 'https://accounts.spotify.com/authorize';
 
 // Replace with your app's client ID, redirect URI and desired scopes
 const clientId = '179a5550a6d24c7cbce8c0e88c443be4';
-const redirectUri = 'http://jade2u.com/ribbon/home.html';
+const redirectUri = 'http://jade2u.github.io/portfolio/select/ribbon/home.html';
 const scopes = [
   'user-top-read'
 ];
