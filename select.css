@@ -45,6 +45,7 @@
 /* start */
 #rha-start{
     background: linear-gradient(#ffc600 75%, #0000 100%);
+    padding-bottom: 15vh;
 }
 #rha-start a{
     height: 12vh;
@@ -54,8 +55,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 4em;
-    margin-bottom: 4em;
+    margin-top: 3em;
 }
 #rha a:hover{
     background-image: url("./select/rush hour/start_hover.png");
@@ -89,7 +89,7 @@
     display: inline-block;
     width: 20%;
 }
-#direction p, #combat p, p#rha-about{
+#direction p, #combat p{
     text-align: left;
     width: 70%;
     font-style: normal;
@@ -98,6 +98,11 @@
     display: block;
     margin: auto;
     margin-bottom: 1em;
+}
+#rha-about p{
+    width: 90%;
+    font-style: normal;
+    padding: 1em;
 }
 #rha strong{
     color: white;
