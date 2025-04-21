@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*** EVERYTHING ***/
+body{
+    font-family: Urbanist, sans-serif;
+    background-color: #FAF9F6;
+    letter-spacing: 0.4px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 0.75rem;
+    opacity: 50%;
+    font-weight: 800;
+    text-transform: uppercase;
+    height: fit-content;
+    margin: 3em 0 1em 0;
+}
+p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5em;
+    margin:0;
+}
+ul {
+    margin:0;
+    padding: 0;
+}
+li {
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+    margin: 0.5em 0 0.5em 1em;
+}
+a {
+    color: black;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.2rem;
+}
+
+
+/*** MENU ***/
+nav {
+    position: fixed;
+    width: 15vw;
+    max-width: 200px;
+    height: 100%;
+    margin-top: 1vh;
+    padding: 0;
+}
+nav button {
+    font-family: Urbanist, sans-serif;
+    font-size: 0.75em;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    background: none;
+    border: none;
+    border-bottom: dotted;
+    text-align: left;
+    display: block;
+    width: fit-content;
+    margin: 1em 1em 0em 0.5em;
+    padding: 0;
+    cursor: pointer;
+}
+nav div {
+    margin-left: 10px;
+    display: none;
+}
+nav .dropBtn {
+    margin-top: 20px;
+}
+
+.about{
+    position: absolute;
+    bottom: 2vh;
+    opacity: 50%;
+}
+.about p{
+    font-size: 0.75rem;
+    margin-bottom: 2em;
+}
+.about h1{
+    font-size: 0.75rem;
+    margin-bottom: 2em
+}
+.about h3{
+    font-size: 0.6rem;
+}
+nav button:hover, nav a:hover{
+    font-style: italic;
+}
+.about:hover{
+    opacity: 100%;
+}
+
+
+/*** CONTENT ***/
+.content {
+    height: fit-content;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    row-gap: 2%;
+    margin-left: 20vw;
+}
+.content a {
+    border: none;
+    width: fit-content;
+    border-radius: 1em;
+    padding: 0;
+}
+.content a img {
+    height: 75vh;
+    width: 75vw;
+    max-width: 2000px;
+    object-fit: cover;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: border-radius 0.5s;
+}
+.content a img:hover {
+    border-radius: 0;
+}
+
+/*** SELECT ***/
+.content a, .content span{
+    grid-column: 1 / span 2;
+}
+
+/* THUMBNAIL */
+.textWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template:
+        "h1 h1"
+        "h2 h2"
+        "desc skills";
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+.textWrapper h1 {grid-area: h1;}
+.textWrapper h2 {grid-area: h2;}
+.descWrapper {grid-area: desc;}
+.listWrapper {grid-area: skills;}
+
+.textWrapper h1 {
+    height: fit-content;
+    text-align: left;
+    margin: 0;
+}
+.textWrapper h2 {
+    opacity: 50%;
+    text-transform: capitalize;
+    text-align: left;
+    margin-top: 0.25em;
+}
+.textWrapper a:hover{
+    font-style: italic;
+}
+/* PAGE */
+.hiddenPage{
+    display:none;
+    height: fit-content;
+}
+.descWrapper {
+    padding-right: 10%;
+}
+
+.hiddenPage img, .hiddenPage video
+{
+    width: 100%;
+    max-width: 2000px;
+    padding: 0;
+    margin: 2em 0 2em 0;
+}
+
+/* LIST */
+.listWrapper
+{
+    justify-items: left;
+    margin-top: 0;
+}
+
+.listWrapper ul
+{
+    list-style: none;
+    margin: 0 0 2em 0;
+}
+.listWrapper li
+{
+    font-size: 0.75rem;
+    color: black;
+    text-align: left;
+    margin: 0.5em 0 0.5em 0;
+}
+
+/*** MISC ***/
+.misc a > h1 {
+    width: fit-content;
+    font-size: 1em;
+    margin: 1em 0 0.5em 0;
+}
+.misc a > p {
+    width: fit-content;
+    font-size: 0.75em;
+    border: black 1px solid;
+    padding: 1em 2em 1em 2em;
+}
+.misc a > img {
+    width: 70%;
+    height: auto;
+}
+

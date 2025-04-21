@@ -1,449 +1,635 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>jade tu</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="site.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+</head>
+
+<body onload="switchContent(document.getElementById('selectBtn')); switchContent(document.getElementById('selectContent'));">
+<!-- MENU -->
+    <nav>
+    <!-- WORK  -->
+        <button class="select" id="selectBtn" onclick="switchContent(this); switchContent(document.getElementById('selectContent'));">SELECT</button>
         
-        <title>jade's archive</title>
-        <link rel="shortcut icon" type="image/ico" href="favicon.ico">
-        <!-- css -->
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="stylesheet" type="text/css" href="select.css"/>
-        <link rel="stylesheet" type="text/css" href="archive.css"/>
-        <link rel="stylesheet" type="text/css" href="queries.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap" rel="stylesheet">
-        
-    </head>
-
-    <body>
-            <div class="dropdown">
-                <button id="dropbtn" onclick="dropDown()"><h1>Hi! I'm Jade ⇝</h1></button>
-                <div id="dropdown-content">
-                    <p>
-                        I'm currently reworking my website... So here is my less cool but equally comprehensive Github page. Thanks for visiting! 
-                        <br>
-                        💌 <a href="mailto:jadewtu@gmail.com">Email</a>&emsp;&emsp;&emsp;
-                        🔗 <a href="https://www.linkedin.com/in/jadetu/" target="_blank">Linkedin</a>
-                        <br>
-                        💼 <a href="./resume.pdf" target="_blank">Resume</a>&emsp;&emsp;
-                        👩🏻‍💻 <a href="./portfolio.pdf" target="_blank">Portfolio</a>
-                    </p>
-                </div>
-            </div>
-
-            <!-- TABS -->
-            <nav id="btns">
-                <button class="select" onclick="switchTab(this)">selected</button>
-                <button class="archive" onclick="switchTab(this)">archive</button>
-            </nav>
+        <div class="select" id="selectDropContent">
+            <button class="ribbon" id="ribbonBtn" onclick="switchContent(this); switchContent(document.getElementById('ribbonContent'));">Ribbon</button>
             
-            <section id="tab">
-                <!-- SELECT -->
-                <div class="select">
+            <button class="rha" id="rhaBtn" onclick="switchContent(this); switchContent(document.getElementById('rhaContent'));">Rush Hour Anxiety</button>
+            
+            <button class="bobbi" id="bobbiBtn" onclick="switchContent(this); switchContent(document.getElementById('bobbiContent'));">BBBB</button>
+            
+            <button class="hyejin" id="hyejinBtn" onclick="switchContent(this); switchContent(document.getElementById('hyejinContent'));">WHAT A SHAME!</button>
+            
+            <button class="mashup" id="mashupBtn" onclick="switchContent(this); switchContent(document.getElementById('mashupContent'));">Mashup</button>
+        </div>
+        
+    <!-- MISC  
+        <button class="misc" id="miscButton" onclick="switchContent(this);switchContent(document.getElementById('miscContent'));">MISC.</button>
+        <div class="misc" id="miscDropContent">
+            <button class="interactive" onclick="switchContent(this); switchContent(document.getElementById('pompom'));" >Interactive</button>
+            
+            <button class="print" onclick="switchContent(this);switchContent(document.getElementById('winterShow'));">Print</button>
+            
+            <button class="social" onclick="switchContent(this);switchContent(document.getElementById('sabai'));">Social</button>
+
+            <button class="physical" onclick="switchContent(this);switchContent(document.getElementById('soundWaves'));">Physical</button>
+        </div>
+
+        <button class="navBtn" id="about" onclick="switchContent(this); switchContent(document.getElementById('aboutContent'));">ABOUT</button>
+        -->
+        <section class="about">
+            <h4 style="margin-bottom: 0.5em; margin-top: 5em">Jade Tu</h4>
+            <p>is a multimedia designer specializing in UI/UX, web design, and content creation. She is a recent Interactive Media Arts graduate from NYU. </p>
+            <section class="listWrapper">
+                <h3>Recently</h3>
+                <ul>
+                    <li>🎬 Princess Mononoke</li>
+                    <li>📺 Mythic Quest</li>
+                    <li>📚 <em>Madame in a Fur Coat</em> by Sabahattin Ali </li>
+                    <li>👩🏻‍💻<a href="https://www.instagram.com/jade.100u/" target="_blank"> 100 Days of Shaders</a></li>
                     
-                    <div class="content">
-                        <div id="buffer"></div>
-                        
-                        <!-- rha -->
-                        <div id="rha">
-                            <section id="rha-start">
-                                <h1 class="tag">UI Design</h1>
-                                <img src="./select/rush hour/title.gif" width="105%" style="transform:translateX(-12px);">
-                                <a href="https://derin-ogut.itch.io/rush-hour-anxiety" target="_blank"> 
-                                    <div id="rha-link"></div>
-                                </a>
-                            </section>
+                </ul>
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jadetu/" target="_blank">Linkedin</a></li>
+                    <li><a href="mailto:jadewtu@gmail.com" target="_blank">Email</a></li>
+                </ul>
 
-                            <section id="rha-about">
-                                <h2>About</h2>
-                                <p>
-                                    Rush Hour Anxiety is a web game made for the 2023 HackNYU Mini Hackathon, where it won 1st place in the Gaming category.<br><br>Following the prompt of 'New York City', the player balances finishing their test in time and dodging pickpocketers on the subway.
-                                </p>
-                            </section>
-                            
-                            
-                            <hr>
-                            <h2>Menu Items</h2>
-                            <h3>Credits</h3>
-                            <section id="creds">
-                                <section class="hero">
-                                    <img src="./select/rush hour/creds/creds.png" width="90%">
-                                    <p>pop-up window</p>
-                                </section>
-                                <section class="img-1">
-                                    <img src="./select/rush hour/creds/creds_btn.png" width="60%">
-                                    <p>icon</p>
-                                </section>
-                                <section class="img-2">
-                                    <img src="./select/rush hour/creds/creds_hover.png" width="60%">
-                                    <p>icon hover-state</p>
-                               </section>
-                            </section>
-                            <h3>Tutorial</h3>
-                            <section id="tutorial">
-                                <section class="hero">
-                                    <img src="./select/rush hour/tut/tut.png" width="90%">
-                                    <p>pop-up window</p>
-                                </section>
-                                <section class="img-1">
-                                    <img src="./select/rush hour/tut/tut_btn.png" width="50%">
-                                    <p>icon</p>
-                                </section>
-                                <section class="img-2">
-                                    <img src="./select/rush hour/tut/tut_hover.png" width="50%">
-                                    <p>icon hover-state</p>
-                               </section>
-                            </section>
-                            <hr>
-
-                            <h2>On-Screen UI</h2>
-                            <h3>Direction</h3>
-                            <section id="direction">
-                                <p>
-                                    <strong>Problem</strong>
-                                    Players played the whole game just on the default screen.
-                                </p>
-                                <p>
-                                    <strong>Solution</strong>
-                                    Have a sprite that instructs and reacts to players looking around.
-                                </p>
-                                <section class="hero">
-                                    <img src="./select/rush hour/lookUI/down.png">
-                                    <img src="./select/rush hour/lookUI/up.png">
-                                    <img src="./select/rush hour/lookUI/left.png">
-                                    <img src="./select/rush hour/lookUI/right.png">
-                                </section>
-                                <section class="img-1">
-                                    <img src="./select/rush hour/demo/up.png" width="100%"> 
-                                </section>
-                            </section>
-                            <h3>Combat</h3>
-                            <section id="combat">
-                                <p>
-                                    <strong>Problem</strong>
-                                    Players didn't understand the function of turning the phone off.
-                                </p>
-                                <p>
-                                    <strong>Solution</strong>
-                                    Show what moves combat NPCs.
-                                </p>
-                                <section class="hero">
-                                    <img src="./select/rush hour/lookUI/off.png">
-                                    <img src="./select/rush hour/lookUI/hit.png">
-                                </section>
-                                <section class="img-1"> 
-                                    <img src="./select/rush hour/demo/hit.jpeg" width="100%">
-                                </section>
-                            </section>
-
-                            <h2>Promotional Posters</h2>
-                            <section id="poster">
-                                <img src="./select/rush hour/poster-01.png" width="70%">
-                                <br>
-                                <img src="./select/rush hour/poster-02.png" width="90%">
-                            </section>
-                            
-                            <hr>
-                        </div>
-                        <!-- ribbon -->
-                        <div id="ribbon">
-                            <section id="ribbon-start">
-                                <h1 class="tag">Web Dev</h1>
-                                <img id="ribbon-logo" src="./select/ribbon/assets/logo-2x.svg">
-                                <picture id="ribbon-title">
-                                    <source
-                                        media="(max-width: 600px)"
-                                        srcset="./select/ribbon/assets/ribbon.svg"
-                                        type="image/svg+xml">
-                                    <source
-                                        media="(max-width: 1024px)"
-                                        srcset="./select/ribbon/assets/ribbon-2x.svg"
-                                        type="image/svg+xml">
-                                    <source
-                                        media="(min-width: 1025px)"
-                                        srcset="./select/ribbon/assets/ribbon-3x.svg"
-                                        type="image/svg+xml">
-                                    
-                                    <img src="./select/ribbon/assets/ribbon.svg" alt="ribbon">
-                                  </picture>
-                                <p>*currently only in developer mode 😕</p>
-                                <a href="./select/ribbon/index.html" target="_blank">Wrap</a>
-                            </section>
-
-                            <span class="down">⇣</span>
-
-                            <hr>
-                            <h2>Goal</h2>
-                            <p>Make Spotify Wrapped a little more personal with custom graphics according to genre & cover art.</p>
-                            <p><em><a href="https://www.figma.com/design/2IjpybCBxABIRcsltFySyr/ribbon?node-id=0-1&t=6WrIDSrRSQ4qn6T2-1" target="_blank">Figma Mockup</a></em></p>
-
-                            <h3>API</h3>
-                            <section id="api">
-                                <p>
-                                    Using the Spotify API, I organized results into 3 categories and 3 time periods.
-                                    <br> 
-                                    This served as a basis for the design.</p>
-                                <img src="./select/ribbon/demo/title card.png">
-                            </section>
-
-                            <h3>Design</h3>
-                            <section id="design">
-                                    <img class="img-1" src="./select/ribbon/demo/artist.png">
-                                    <img class="img-2" src="./select/ribbon/demo/genre.png">
-                                    <p>
-                                        For Artist and Genre cards, I designated 2 colors for each genre.
-                                        I created algorithms to choose complementing/contrasting colors based on the 2 colors.
-                                    </p>
-
-                                    <img class="img-3" src="./select/ribbon/demo/tracks.png">
-                                    <p id="tracks" class="img-3">
-                                        For Track cards, I used a color picker algorithm instead.
-                                    </p>
-                            </section>        
-                        </div>
-                        <!-- hyejin -->
-                        <div id="hyejin">
-                            <section id="hyejin-start">
-                                <h1 class="tag">Brand Design</h1>
-                                <img src="./select/hyejin/logo.png" width="35%" style="max-width:300px;min-width:150px;">
-                                <a href="https://open.spotify.com/album/5C6Ie4Wc993th2280Qg0bk?si=q7BzX44JTL-uFCu9zr_51g" target="_blank">listen</a>
-                            </section>
-
-                            <span class="down">⇣</span>
-
-                            <h2>Merch</h2>
-                            <section class="stickers">
-                                <h3>stickers</h3>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <p><em>Mock-up</em> <br> 
-                                            Made in Illustrator and Photoshop.</p>
-                                        </td>
-                                        <td>
-                                            <img src="./select/hyejin/stickers.png">
-                                        </td>
-                                    </tr>
-                                </table>
-                            </section>
-                            <section class="hoodie">
-                                <h3>hoodie</h3>
-                                <table>
-                                    <tr>
-                                        <td><img src="./select/hyejin/final front.png"></td>
-                                        <td><img src="./select/hyejin/finalback.png"></td>
-                                    </tr>
-                                </table>
-                                <p><em>Mock-up</em><br>Made in Illustrator and Photoshop.</p>
-                                <table id="hoodie-pic">
-                                    <tr>
-                                        <td><img src="./select/hyejin/hoodie 1.png">
-                                        </td>
-                                        <td><img src="./select/hyejin/hoodie 2.png"></td>
-                                    </tr>
-                                </table>
-                                <p><em>Final</em><br>Images retouched in Photoshop.<br>Hoodie embroidered with Brother SE400.</p>
-                            </section>
-                            <section class="keychain">
-                                <h3>keychain</h3>
-                                <table>
-                                    <tr>
-                                        <td><img src="./select/hyejin/kc photoshoot1.png"></td>
-                                        <td><img src="./select/hyejin/kc photoshoot2.png"></td>
-                                    </tr>
-                                </table>
-                                <p> 
-                                    <em>Final</em><br> 
-                                    Images retouched in Photoshop.<br>
-                                    Product made with acrylic, laser-cut with Helix Mini.
-                                </p>
-                            </section>
-                            
-                            <h2>Liner Notes</h2>
-                            <section class="liner-notes">
-                                <img src="./select/hyejin/1_v3.png" style="margin-bottom:0.5em;">
-                                <img src="./select/hyejin/2_v1.png">
-                            </section>
-                        </div>
-                        <div id="buffer"></div>
-                    </div>
-                </div>
-
-                <!-- ARCHIVE -->
-                <div class="archive">
-                    <div class="content">
-                        <div id="buffer"></div>
-
-                        <div class="sites">
-                            <h1 class="tag">Sites</h1>
-
-                            <section id="musicAI" >
-                                <a href="./archive/site/music AI/index.html" target="_blank">Music AI</a>
-                                <section class="carousel">
-                                    <img src="./archive/site/music AI/mockup-1.jpeg">
-                                    <img src="./archive/site/music AI/mockup-2.jpeg">
-                                </section>
-                                <p>Text and photo Generative AI practice with ReplicateAI.<br><br>Made with Javascript and stored in Firebase.</p>
-                            </section>
-                            
-                            <section id="bloodchild">
-                                <a href="https://jadewtu.itch.io/bloodchild" target="_blank">Bloodchild</a>
-                                <section class="carousel">
-                                    <img src="./archive/site/bloodchild/demo.jpeg">
-                                    <img src="./archive/site/bloodchild/mockup-01.png">
-                                    <img src="./archive/site/bloodchild/mockup-02.png">
-                                    <img src="./archive/site/bloodchild/mockup-03.png">
-                                </section>
-                                <p>Retelling of Octavia Butler's <em>Bloodchild</em> for Storytelling for Project Development.<br><br> Made in Twine and Procreate.</p> 
-                                
-                            </section>
-
-                            <section id="bandplayer">
-                                <a href="https://editor.p5js.org/jadewtu/full/MmRn72azO" target="_blank">BandPlayer</a>
-                                <section class="carousel">
-                                    <img src="./archive/site/bandplayer/demo.gif">
-                                </section>
-                                <p>Keyboard-controlled animation and song for Creative Coding.<br><br> Made with p5.js and Procreate.
-                            </section>
-                        </div>
-
-                        <div class="designs">
-                            <h1 class="tag">Designs</h1>
-
-                            <section id="hookd">
-                                <h2>Hook'd</h2>
-                                <section class="carousel">
-                                    <img src="./archive/design/hookd/mockup-01.png">
-                                    <img src="./archive/design/hookd/mockup-02.png">
-                                    <img src="./archive/design/hookd/mockup-03.png">
-                                    <img src="./archive/design/hookd/mockup-04.png">
-                                    <img src="./archive/design/hookd/mockup-05.png">
-                                    <img src="./archive/design/hookd/mockup-06.png">
-                                    <img src="./archive/design/hookd/mockup-07.png">
-                                </section>
-                                <p>UI/UX in game prototype <em>Hook'd</em> for the 2024 Global Game Jam.<br><br>Made in Illustrator.</p> 
-                            </section>
-
-                            <section id="briefing">
-                                <h2>Briefing Book</h2>
-                                <section class="carousel">
-                                    <img src="./archive/design/brief book/new_1.jpeg">
-                                    <img src="./archive/design/brief book/old_1.jpeg">
-                                    <img src="./archive/design/brief book/new_2.jpeg">
-                                    <img src="./archive/design/brief book/old_2.jpeg">
-                                </section>
-                                <p>New briefing book template <em>(slides 1 & 3)</em> for NYU's Berkley Center for Entrepreneurship's Help Desk program.<br><br>Made in Illustrator.</p>
-                            </section>
-
-                            <section id="social">
-                                <h2>Sabai Design</h2>
-                                <section class="carousel">
-                                    <img src="./archive/design/social media/garden.jpeg">
-                                    <img src="./archive/design/social media/pinterest.jpeg">
-                                    <img src="./archive/design/social media/road.jpg">
-                                </section>
-                                <p>Posts and stories made for Sabai Design's Instagram.<br><br>Made in Illustrator.</p>
-                            </section>
-
-                            <section id="posters">
-                                <h2>Posters</h2>
-                                <section class="carousel">
-                                    <img src="./archive/design/posters/rip.jpeg">
-                                    <img src="./archive/design/posters/wintershow.jpeg">
-                                    <img src="./archive/design/posters/contest.jpeg">
-                                </section>
-                                <p>
-                                    Posters for various personal projects.
-                                    <br><br>
-                                    <em>1. Typography & Technology class <br> 2. IMA 2023 Winter Show <br> 3. Refinery Creative application</em>
-                                </p>
-                            </section>
-                        </div>
-
-                        <div class="others">
-                            <h1 class="tag">& Others</h1>
-
-                            <section id="waves">
-                                <h2>Sound Waves</h2>
-                                <section class="carousel">
-                                    <img src="./archive/misc/sound waves/left.jpeg">
-                                    <img src="./archive/misc/sound waves/right.jpeg">
-                                    <img src="./archive/misc/sound waves/top.jpg">
-                                </section>
-                                <p>3D-printed headpiece made for Introduction to Digital Fabrication.<br><br>Modeled in Fusion 360.</p>
-                            </section>
-
-                            <section id="loop">
-                                <a href="https://youtu.be/Mzy9jW7TTBI" target="_blank">Loop Pool</a>
-                                <section class="carousel">
-                                    <img src="./archive/misc/loop pool/1.jpeg">
-                                    <img src="./archive/misc/loop pool/2.jpeg">
-                                    <img src="./archive/misc/loop pool/3.jpeg">
-                                </section>
-                                <p>Animation made for Communication Labs.<br><br>Made in Illustrator and After Effects.</p>
-                                
-                            </section>
-                            
-                        </div>
-
-                        <div id="buffer"></div>
-                    </div>
-                </div>
-                
             </section>
+        </section>
+    </nav>
+
+
+<!-- CONTENT -->
+    <section id="container">
+        <!-- SELECT HOME -->
+        <div class="content select" id="selectContent">
+            <a id="ribbonThumbnail" onclick="switchContent(document.getElementById('ribbonBtn'));switchContent(document.getElementById('ribbonContent'));">
+                <div class="textWrapper" style="color:#14843c">
+                    <h1>Ribbon</h1>
+                    <h2>visualize your Spotify listening data</h2>
+                </div>
+                <img src="select/ribbon/home.png">
+            </a>
             
-        <script>
-            /*DROP DOWN*/
-            let drop_btn = document.getElementById("dropbtn");
-            let drop_text = document.getElementById("dropdown-content");
-            let drop_show = false;
+            <a id="rhaThumbnail" onclick="switchContent(document.getElementById('rhaBtn'));switchContent(document.getElementById('rhaContent'));">
+                <div class="textWrapper" style="color:#a72d30">
+                    <h1>Rush Hour Anxiety</h1>
+                    <h2 >play as a subway-riding, test-taking, weirdo-dodging NYU student</h2>
+                </div>
+                <img src="select/rush%20hour/start.png">
+            </a>
+            
+            <a id="bobbiThumbnail" onclick="switchContent(document.getElementById('bobbiBtn'));switchContent(document.getElementById('bobbiContent'));">
+                <div class="textWrapper" style="color:#e0527a">
+                    <h1>Bobbi's Bubble-Tastic Birthday Bash</h1>
+                    <h2>pop some bottles at a kid's birthday party</h2>
+                </div>
+                <img src="select/bobbi/start.png" style="object-position: 80% 0">
+            </a>
+            
+            <a id="hyejinThumbnail" onclick="switchContent(document.getElementById('hyejinBtn'));switchContent(document.getElementById('hyejinContent'));">
+                <div class="textWrapper" style="color:#2a4d76">
+                    <h1><em>WHAT A SHAME!</em></h1>
+                    <h2>led brand and merchandise design for an indie artist</h2>
+                </div>
+                <img src="select/hyejin/liner1.png" style="object-position: 50% 0">
+            </a>
+            
+            <a id="mashupThumbnail" onclick="switchContent(document.getElementById('mashupBtn'));switchContent(document.getElementById('mashupContent'));">
+                <div class="textWrapper">
+                    <h1>Mashup</h1>
+                    <h2>proposed a new way to share music</h2>
+                </div>
+                <img src="select/mashup/cover.png">
+            </a>
+        </div>
 
-            function dropDown(){
-                //toggle
-                drop_show = !drop_show;
-                //show
-                if(drop_show){
-                    dropbtn.style.color = "#ffa0b0";
-                    drop_text.style.display = "block";
-                }
-                //hide
-                else if(!drop_show){
-                    dropbtn.style.color = "black";
-                    drop_text.style.display = "none";
-                }
-            }
-
-            /* SWITCH TABS */
-            //start on select tab
-            let archive_stuff = document.getElementsByClassName('archive');
-            archive_stuff[0].style.opacity = "50%";
-            archive_stuff[1].style.display = "none";
-
-            function switchTab(btn){
-                //find other tab
-                let last_btn;
-                let btns = document.getElementById('btns').children;
-                for(var i=0; i<btns.length; i++){
-                    if(btns[i].className != btn.className){last_btn = btns[i];}
-                }
-                //get other tab 
-                let last_tab = document.getElementsByClassName(last_btn.className);
-                //change visibility
-                last_tab[0].style.opacity = "50%";
-                last_tab[1].style.display = "none";
-
-                //get current tab
-                let this_tab = document.getElementsByClassName(btn.className);
-                //change visibility
-                this_tab[0].style.opacity = "100%";
-                this_tab[1].style.display = "block"; 
-            }
-        </script>
+        <!-- SELECT PAGES -->
+        <div class="hiddenPage content ribbon" id="ribbonContent" style="color:#14843c">
+            <span class="textWrapper">
+                <h1>Ribbon</h1>
+                <section class="descWrapper">
+                    <h3>what</h3>
+                    <p>
+                        With the slogan “Your Spotify Wrapped With A Bow“, Ribbon is a website displaying visual-focused infographics of users’ Spotify listening data.
+                    </p>
+                    <h3>Why</h3>
+                    <p>
+                        Combining my passions for music, color design, and coding, this project has been a rewarding lesson in problem-solving and served as my final project for <em>Introduction to Web Design</em>.
+                    </p>
+                    <h3>How</h3>
+                    <p>
+                         The overall design mirrors Spotify’s brand design through bold, minimalistic combinations of shapes and colors. Then, using the Spotify API, color palettes and typography are personalized to each user depending on their top songs, artists, and genres.
+                    </p>
+                </section>
+                <section class="listWrapper">
+                        <h3>TASKS</h3>
+                        <ul>
+                            <li>Web Development & Design</li>
+                            <li>API Integration</li>
+                            <li>UI/UX</li>
+                        </ul>
+                        <h3>TOOLS</h3>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>Illustrator</li>
+                            <li>Figma</li>
+                        </ul>
+                        <h3>TYPE</h3>
+                        <ul>
+                            <li>School Project</li>
+                        </ul>
+                        <h3>TIME</h3>
+                        <ul>
+                            <li>Fall 2024</li>
+                        </ul>
+                </section>
+            </span>
+            <span>
+                <h2>Prototyping</h2>
+                <p>For the Figma prototype, I drafted a unique but familiar visual identity by keeping Spotify Wrapped’s minimal aesthetic and card layout while adding unique design elements and colorways.</p>
+                <img src="select/ribbon/figma.png">
+                
+                
+            </span>
+            <span>
+                <h2>Designing</h2>
+                <p>This project had a lot of firsts for me, from integrating the Spotify API to creating a card system. The final site is a result of several tutorials, articles, and forums. My baseline goal was for each data point/card to visually reflect itself through color, type, and layout.</p>
+                <img src="select/ribbon/cards.png">
+            </span>
+            <span>
+                    <h2>FINAL</h2>
+                    <p>Final features include:</p>
+                    <ul>
+                        <li>Successful integration of login authorization & API data fetching</li>
+                        <li>Time and data type filtering</li>
+                        <li>Personalized graphics, including genre-specific fonts and color palettes</li>
+                        <li>Smooth fade-in and fade-out transitions</li>
+                    </ul>
+                <img src="select/ribbon/mobile.png">
+            </span>
+        </div>
         
-    </body>
+        <div class="hiddenPage content rha" id="rhaContent" style="color:#a72d30">
+            <span class="textWrapper">
+                <h1>Rush Hour Anxiety</h1>
+                <section class="descWrapper">
+                    <h3>what</h3>
+                    <p>
+                        <a href=" https://derin-ogut.itch.io/rush-hour-anxiety" target="_blank" style="color:#a72d30">Rush Hour Anxiety</a> is a web game that puts players in the stressful shoes of a procrastinating NYU student riding the subway.
+                    </p>
+                    <h3>Why</h3>
+                    <p>
+                        Created for HackNYU’s 2023 Mini Hackathon, following the theme "New York". Won 1st in the Gaming category.
+                    </p>
+                    <h3>How</h3>
+                    <p>
+                         Through user testing, in-depth research of the MTA’s style, and reflections on our own experiences, my team and I were able to design a user-friendly interface that reflects the game’s individual style and familiar environment.
+                    </p>
+                    
+                </section>
+                <section class="listWrapper">
+                        <h3>TASKS</h3>
+                        <ul>
+                            <li>UI/UX Design</li>
+                            <li>Tech Artist</li>
+                            <li>Art Direction</li>
+                        </ul>
+                        <h3>TOOLS</h3>
+                        <ul>
+                            <li>Illustrator</li>
+                            <li>Procreate</li>
+                            <li>Unity</li>
+                        </ul>
+                        <h3>TYPE</h3>
+                        <ul>
+                            <li>Competition</li>
+                        </ul>
+                        <h3>TIME</h3>
+                        <ul>
+                            <li>Fall 2024</li>
+                        </ul>
+                    
+                </section>
+            </span>
+            <span>
+                <h2>Style</h2>
+                <p>
+                    We started with identifying the MTA’s recognizable visual motifs such as their use of Helvetica type, contrasting colors, and stylized illustration. 
+                    <br><br>
+                    Taking inspiration from these elements, our style pairs a graffiti-inspired, cartoon-y style with cheeky, referential graphics to reflect the silly, youthful, and familiar nature of the gameplay.
+                </p>
+                <img src="select/rush%20hour/tut.png">
+                <img src="select/rush%20hour/creds.png">
+                <img src="select/rush%20hour/art.png">
+            </span>
+            <span>
+                <h2>Navigation</h2>
+                <p>While playtesting, we realized players wouldn’t realize looking at enemies is a combat move because they would stay on the main quiz screen.</p>
+                <br>
+                <p>As a result, we added constant on-screen navigational UI to show:</p>
+                <ul>
+                    <li>Which screen the player is on</li>
+                    <li>Which screen enemies are on</li>
+                    <li>When combat is effective</li>
+                </ul>
+                <img src="select/rush%20hour/nav.png">
+            </span>
+            <span>
+                <h2>Final Screens</h2>
+                <img src="select/rush%20hour/start.png">
+                <img src="select/rush%20hour/warn.jpeg">
+                <img src="select/rush%20hour/left.png">
+                <img src="select/rush%20hour/hit.jpeg">
+                <img src="select/rush%20hour/up.png">
+            </span>
+        </div>
+        
+        <div class="hiddenPage content bobbi" id="bobbiContent" style="color:#e0527a">
+            <span class="textWrapper">
+                <h1>Bobbi's Bubble-Tastic Birthday Bash</h1>
+                <section class="descWrapper">
+                    <h3>what</h3>
+                    <p>
+                        Wreck the party and spray kids with champagne to ruin Bobbi's party! <a href="https://derin-ogut.itch.io/bbbb" target="_blank" style="color:#e0527a">Bobbi's Bubble-Tastic Birthday Bash</a> is a game about an adult getting drunk at a kid's birthday party and causing mayhem.
+                    </p>
+                    <h3>Why</h3>
+                    <p>
+                        Made with a team of 6 for the 2025 NYU Global Gam Jam by. Following the themes of "Bubbles" and "Y2K", we wanted our game to feel like the quick, quirky flash games we played as kids in the early 2000's.
+                    </p>
+                    <h3>How</h3>
+                    <p>
+                        In under 72 hours, we were able to fully develop the full game-play loop, including a difficulty scale and online leaderboard. Taking inspiration from early 2000's Cartoon Network, the art team used exaggerated shapes, bright colors, and bouncy animations to create a unique style reflecting the game's quirky, fast, and fun gameplay.
+                    </p>
+                    
+                </section>
+                <section class="listWrapper">
+                        <h3>TASKS</h3>
+                        <ul>
+                            <li>UI/UX Art</li>
+                            <li>Game Design</li>
+                            <li>Art Direction</li>
+                        </ul>
+                        <h3>TOOLS</h3>
+                        <ul>
+                            <li>Illustrator</li>
+                            <li>Procreate</li>
+                            <li>Unity</li>
+                        </ul>
+                        <h3>TYPE</h3>
+                        <ul>
+                            <li>Competition</li>
+                        </ul>
+                        <h3>TIME</h3>
+                        <ul>
+                            <li>January 2025</li>
+                        </ul>
+                    
+                </section>
+            </span>
+            <span>
+                <h2>Style</h2>
+                <p>
+                    Our art uses the familiar shapes and silhouettes of early 2000's cartoons like <em>Sixteen</em> and <em>Foster's Home For Imaginary Friends</em>.
+                    <br><br>
+                    For the UI, I combined this art style with the Frutiger Aero aesthetic, reflecting both the "Y2K" theme and the refreshingly nostalgic vibe of the game.
+                </p>
+                <img src="select/bobbi/Aaron_Kid_Run_Color_Spritesheet.png">
+                <img src="select/bobbi/Jade_Kid_Run__Color_Spritesheet.png">
+                <img src="select/bobbi/bubble_guide.png">
+            </span>
+            <span>
+                <h2>Final Screens</h2>
+                <img src="select/bobbi/start.png">
+                <img src="select/bobbi/splash.jpeg">
+                <img src="select/bobbi/main.jpeg">
+                <img src="select/bobbi/hit.jpeg">
+                <img src="select/bobbi/reload.jpeg">
+            </span>
+            <span>
+                <h2>NEXT STEPS</h2>
+                <p>
+                    I'm in the process of making a physical controller that would let players actually shake and pop a bottle. I currently have a lo-fi prototype of the working breadboard, and am in the process of 3D modelling the bottle.
+                    <br><br>
+                    Watch me play a round using the lo-fi prototype!
+                </p>
+                <video controls><source src="select/bobbi/alt_ctrl.mov"/></video>
+            </span>
+        </div>
+        
+        <div class="hiddenPage content hyejin" id="hyejinContent" style="color:#2a4d76">
+            <span class="textWrapper">
+                <h1>WHAT A SHAME!</h1>
+                <section class="descWrapper">
+                    <h3>what</h3>
+                    <p>
+                        I led the brand design of indie artist Hyejin's debut EP <em>WHAT A SHAME!</em>, art directing multiple promotional projects such as merchandise, social media, and video.
+                    </p>
+                    <h3>Why</h3>
+                    <p>
+                        This was a freelance project supporting the EP's promotional rollout.
+                    </p>
+                    <h3>How</h3>
+                    <p>
+                         I visually reflected the EP’s sound and story through multiple promotional projects such as merchandise, liner notes, and video. Key design elements incorporate the futuristic design motifs of 90’s/early 2000’s pop culture and the dramatic typography of vintage film cards.
+                    </p>
+                    
+                </section>
+                <section class="listWrapper">
+                        <h3>TASKS</h3>
+                        <ul>
+                            <li>Graphic Design</li>
+                            <li>Product Design</li>
+                            <li>Video & Photo Editing</li>
+                            <li>E-Commerce</li>
+                        </ul>
+                        <h3>TOOLS</h3>
+                        <ul>
+                            <li>Illustrator</li>
+                            <li>Photoshop</li>
+                            <li>Premiere Pro</li>
+                            <li>Shopify</li>
+                        </ul>
+                        <h3>TYPE</h3>
+                        <ul>
+                            <li>Freelance</li>
+                        </ul>
+                        <h3>TIME</h3>
+                        <ul>
+                            <li>2023</li>
+                        </ul>
+                    
+                </section>
+            </span>
+            <span>
+                <h2>Development</h2>
+                <p>
+                    After speaking with Hyejin, I learned about her love for early 2000’s R&B/Soul artists like Amy Winehouse and Norah Jones. We decided to combine Y2K and vintage aesthetics to reflect Hyejin’s current sound and her nostalgic influences.
+                </p>
+                <img src="select/hyejin/abby%20logo%20comp.png">
+            </span>
+            <span>
+                <h2>Design</h2>
+                <p>Final graphics heavily reference early film title cards through the use of exaggerated script, decorative borders, and whimsical graphics.</p>
+                <br>
+                <p>Illustrations takes heavy inspiration from Y2K cyber culture’s chunky fonts, metallic textures, and organic shapes.</p>
+                <img src="select/hyejin/liner1.png">
+                <img src="select/hyejin/liner2.png">
+                <img src="select/hyejin/stickers.png">
+            </span>
+            <span>
+                <h2>Product Images</h2>
+                <img src="select/hyejin/hoodie.png">
+                <img src="select/hyejin/keychain.png">
+            </span>
+        </div>
+        
+        <div class="hiddenPage content mashup" id="mashupContent" style="color:#14843c">
+            <span class="textWrapper">
+                <h1>Mashup</h1>
+                <section class="descWrapper">
+                    <h3>what</h3>
+                    <p>
+                        Mashup is a proposed multiplayer, mobile rhythm game that allows friends to share songs in the form of a round in the game. The full proposal can be viewed more in depth in its <a href="https://bit.ly/mashup-essay" target="_blank" style="color:#14843c">research paper</a> and <a href="https://bit.ly/mashup-slides" target="_blank" style="color:#14843c">presentation</a>.
+                    </p>
+                    <h3>Why</h3>
+                    <p>
+                        Spurred by my personal frustration with my Spotify recommendations, I wanted to identify a solution that would be both through detailed, thoughtful research, design, and development.
+                    </p>
+                    <h3>How</h3>
+                    <p>
+                         The project includes the research process that led me to identify the problem with recommendation algorithms, along with evidence supporting my proposal. It also includes the steps I took towards realizing the game itself.
+                    </p>
+                </section>
+                <section class="listWrapper">
+                        <h3>TASKS</h3>
+                        <ul>
+                            <li>Research & Development</li>
+                            <li>Product Design & Development</li>
+                            <li>Presentation Design</li>
+                        </ul>
+                        <h3>TOOLS</h3>
+                        <ul>
+                            <li>Illustrator</li>
+                            <li>Figma</li>
+                            <li>Unity</li>
+                            <li>Zotero</li>
+                        </ul>
+                        <h3>TYPE</h3>
+                        <ul>
+                            <li>School Project</li>
+                        </ul>
+                        <h3>TIME</h3>
+                        <ul>
+                            <li>Fall 2024</li>
+                        </ul>
+                </section>
+            </span>
+            <span>
+                <h2>Research</h2>
+                <p>
+                    My goal was to identify how algorithmic vs. natural music recommendation fundamentally differ by asking what is music, what is music taste, and how do we form music taste.
+                </p>
+                <h3>Problem</h3>
+                <p>
+                    A central aspect of music taste formation is social interaction. Algorithmic music recommendation lack opportunities for social engagement between users, leading to results lacking in nuance or personal meaning.
+                </p>
+                <h3>Hypothesis</h3>
+                <p>
+                    If users were prompted to actively engage with the music shared with them, they could develop a new dimension of meaning attached to the music.
+                </p>
+                <h3>Solution</h3>
+                <p>
+                    A multiplayer rhythm game could encourage active and authentic social interaction through gameplay and competition.
+                </p>
+                <img src="select/mashup/research.png" style="margin-top: 4em;">
+            </span>
+            <span>
+                <h2>Wireframes</h2>
+                <p>
+                    Through paper and Figma wireframes, I established the user journey, game flow, and general style of the project.
+                    <br>
+                    I then iterated based on player feedback.
+                </p>
+                <img src="select/mashup/wireframe-paper.jpeg" style="width:50%;justify-self:center;">
+                <img src="select/mashup/wireframe-figma.jpg">
+            </span>
+            <span>
+                <h2>Design</h2>
+                <p>
+                    I aimed to develop a unique style that balanced the DJ themes’ fun vibrancy with Spotify’s simplicity and legibility. The final aesthetic adds vibrant colors, graffiti-esque fonts, and hand-drawn elements to Spotify’s existing layouts for a smooth, yet exciting user experience.
+                </p>
+                <img src="select/mashup/mockups.png">
+            </span>
+            <span>
+                <h2>Final Presentation</h2>
+                <img src="select/mashup/ppt-1.jpg">
+                <img src="select/mashup/ppt-2.jpg">
+                <img src="select/mashup/ppt-3.jpg">
+                <img src="select/mashup/ppt-4.jpg">
+                <img src="select/mashup/ppt-5.jpg">
+            </span>
+        </div>
+        
+        
+        <!-- MISC GRID -->        
+        <div class="content misc" id="miscContent">
+            <a id="winterShow" class="print">
+                <h1>Winter Show</h1>
+                <p>Print</p>
+                <img src="select/ribbon/home.png">
+            </a>
+            <a id="rhaPoster" class="print">
+                <div class="textWrapper">
+                    <h1>Rush Hour Anxiety Poster</h1>
+                    <p>Print</p>
+                </div>
+            </a>
+            <a id="sabai" class="social">
+                <div class="textWrapper">
+                    <h1>Sabai Design</h1>
+                    <p>Social/Digital</p>
+                </div>
+            </a>
+            <a id="odlr" class="video">
+                <div class="textWrapper">
+                    <h1>Oscar de la Renta</h1>
+                    <p>Social</p>
+                </div>
+            </a>
+            <a id="bleecker" class="social">
+                <div class="textWrapper">
+                    <h1>Bleecker Street Media</h1>
+                    <p>Social/Digital</p>
+                </div>
+            </a>
+            <a id="pompom" class="interactive">
+                <div class="textWrapper">
+                    <h1>Pom Pom</h1>
+                    <p>Interactive</p>
+                </div>
+            </a>
+            <a id="hookd" class="interactive">
+                <div class="textWrapper">
+                    <h1>Hook'd</h1>
+                    <p>Interactive</p>
+                </div>
+            </a>
+            <a id="mapify" class="interactive">
+                <div class="textWrapper">
+                    <h1>Mapify</h1>
+                    <p>Interactive</p>
+                </div>
+            </a>
+            <a id="replayAI" class="interactive">
+                <div class="textWrapper">
+                    <h1>ReplayAI</h1>
+                    <p>Interactive</p>
+                </div>
+            </a>
+            <a id="soundWaves" class="physical">
+                <div class="textWrapper">
+                    <h1>Sound Waves</h1>
+                    <p>physical</p>
+                </div>
+            </a>
+            
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div class="content about" id="aboutContent">
+            <span class="textWrapper">
+                <h1>Hi!</h1>
+                <section class="descWrapper">
+                    <p>
+                        <br><br>
+                        I’m Jade, a multi-media designer and recent Interactive Media Arts graduate from NYU.
+                        <br><br>
+                        I am passionate about solving design problems across media and am experienced in digital marketing, game, and web design. I thrive in a collaborative environment and am always eager to learn new skills.
+                    </p>
+                </section>
+                <section class="listWrapper">
+                        <h3>Hobbies</h3>
+                        <ul>
+                            <li>Puzzles</li>
+                            <li>Comics</li>
+                            <li>Concerts</li>
+                        </ul>
+                        <h3>Latest Media Consumption</h3>
+                        <ul>
+                            <li>🎬 Princess Mononoke</li>
+                            <li>📺 Mythic Quest</li>
+                            <li>📚 <em>Madame in a Fur Coat</em> by Sabahattin Ali </li>
+                        </ul>
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/jadetu/" target="_blank">Linkedin</a></li>
+                            <li><a href="mailto:jadewtu@gmail.com" target="_blank">Email</a></li>
+                        </ul>
+                    
+                </section>
+            </span>
+        </div>
+
+    </section>
+
+
+    <script>
+        /* HOVER COLOR */
+        function changeColor(element, color)
+        {
+            element.style.color = color;
+        }
+        /* SWITCH */
+        function switchContent(btn){
+            //get target class & parent
+            let target_class = btn.className;
+            let parent = btn.parentNode;
+            
+            //go thru everything in section
+            for(var i = 0; i <= parent.children.length-1; i++)
+            {
+                let this_child = parent.children[i];
+                
+                //change style based on type
+                switch(this_child.tagName)
+                {
+                    case "BUTTON" :
+                        if(this_child.className == target_class) {this_child.style.fontWeight = "bold";}
+                        else {this_child.style.fontWeight = "normal";}
+                        break;
+                        
+                    case "DIV":
+                    case "A":
+                        if(this_child.className == target_class) {
+                            //show objects in same class
+                            this_child.style.display = "grid";
+                            //and all their children
+                            for (var child of this_child.children) {
+                                child.style.display = "grid";
+                                //and change font back
+                                child.style.fontWeight="normal";
+                            }
+                            
+                        }
+                        else {this_child.style.display = "none";}
+                        break;
+                        
+                    default:
+                        console.log(this_child.tagName);
+                        break;
+                }
+            }
+        }
+    </script>
+
+</body>
 </html>
